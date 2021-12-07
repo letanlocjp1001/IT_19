@@ -1,0 +1,94 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Quicksand:wght@400;500&display=swap")
+    link(rel="stylesheet", href="css/style.css")
+    link(rel="stylesheet", href="https://use.typekit.net/lnd2ehr.css")
+    link(rel="stylesheet", href="css/animate.css")
+    link(rel="stylesheet", href="css/animate/animate.css")
+    script(src="./js/app.js")   
+    script(src="js/wow.min.js") 
+    script(type="text/javascript") new WOW().init();
+
+    title IT19
+  body
+    header.header
+      .header__sidebar#header__sidebar 
+        .header__logo
+          img.header__logo-img(src="img/Logo.svg", alt="Logo")
+        ul.header__nav 
+          li.header__item 
+            a.header__link(href="#") IT19とは
+          li.header__item 
+            a.header__link(href="#") できること
+          li.header__item 
+            a.header__link(href="#") 授業方法
+          li.header__item 
+            a.header__link(href="#") 最新情報
+          li.header__item 
+            a.header__link(href="#") お問い合わせ
+          li.header__item-1 
+            a.header__link-1(href="#") 応募してみる
+
+    main 
+      .wrapper 
+        img.people.wow.animate__fadeInDown(src="img/people.png", alt="")
+        img.text.wow.animate__zoomIn(data-wow-delay=".5s" src="img/text.png", alt="")
+        .bg
+          h4.bg__news IT19 NEWS
+          p.bg__times 2021/2/3
+          p.bg__text 
+            marquee(behavior="", direction="") 最新情報入ります。最新情報入ります。最新情報入ります。最新情報入ります。
+          img.bg__unit-icon(src="img/arrow-left.svg", alt="")
+
+        img.wrapper__star(src="img/star.png", alt="star")  
+      div.bg__video
+        video.bg__content(autoplay muted loop)
+          source(src="img/FV動画.mp4" type="video/mp4")
+          
+        
+      section
+        .whatit19
+          h3.whatit19__h3
+            span この文章はダミーです。文字の大きさ、量、字間、行間等を<br>
+            span 確認するために入れています。
+
+          p.whatit19__text
+            |吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で<br>
+            |ニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞<br>
+            |くとそは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々
+          .row-card
+            .card
+              .card__side.card__side--front
+                img(src="img/side-1.png", alt="")
+                p ITってなに？
+                span What is IT?
+              .card__side.card__side--back
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬはまだ無い。どこで生れたかとんと見当が。
+            .card
+              .card__side.card__side--front
+                img(src="img/side-2.png" alt="")
+                p ITインフラってなに？
+                span What is infra?
+              .card__side.card__side--back
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬはまだ無い。どこで生れたかとんと見当が。
+            .card
+              .card__side.card__side--front
+                img(src="img/side-3.png" alt="")
+                p IT19ってなに？
+                span What is IT19?
+              .card__side.card__side--back 
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬはまだ無い。どこで生れたかとんと見当が。
+
+          button.btn もっと見る
+            span.btn__arrow 
+              img(src="img/arrow-left.svg", alt="")
+
+          
+
+      
+          
+

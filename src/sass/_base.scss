@@ -1,0 +1,41 @@
+$color-primary: #15c2c4;
+$color-primary-light: #44ced0;
+
+$color-secondary: #fceb3b;
+$color-secondary-light: #fff378;
+$color-secondary-dark: #ffe600;
+
+$color-grey: #eaeaea;
+$color-orange: #f37755;
+
+$color-black: #000;
+$color-white: #fff;
+
+$shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+$shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+// FONT VARIABLES
+$font-primary: 'Noto Sans JP', sans-serif;
+$font-display-1: 'Quicksand', sans-serif;
+$font-display-2: 'elevon', sans-serif;
+$font-display-3: 'futura-pt', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  line-height: 1.6;
+  height: 200vh;
+  margin: auto auto;
+}
