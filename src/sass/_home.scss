@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 15%;
+  bottom: 10%;
   margin: 0 auto;
   display: grid;
   align-items: center;
@@ -72,19 +72,21 @@
   img {
     height: auto;
     &.people {
-      width: 60%;
+      position: absolute;
+      top: 18%;
+      width: 70%;
       height: auto;
     }
     &.text {
       position: absolute;
       top: 30%;
-      width: 25%;
+      width: 38%;
     }
   }
   &__star {
     position: absolute;
     top: 50%;
-    right: 13%;
+    right: 7%;
   }
 }
 .whatit19 {
@@ -162,7 +164,6 @@
   }
   &:hover &__side--back {
     transform: rotateY(0);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
   }
 }
 .btn {
@@ -178,6 +179,9 @@
   padding: 1rem;
   margin: auto;
   transition: all 0.2s linear;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid black;
   &__arrow img {
     position: absolute;
     top: 28%;
@@ -186,7 +190,6 @@
 }
 .btn:hover {
   transform: translateY(-6px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 .btn:active {
   transform: translateY(-2px);
