@@ -9,30 +9,16 @@ html(lang="en")
     link(rel="stylesheet", href="https://use.typekit.net/lnd2ehr.css")
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="css/animate/animate.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    //-favicon here
+    link(rel="shortcut icon", style="image/png", href="img/favicon.svg")
     script(src="./js/app.js")   
     script(src="js/wow.min.js") 
     script(type="text/javascript") new WOW().init();
 
     title IT19
   body
-    header.header
-      .header__sidebar#header__sidebar 
-        .header__logo
-          img.header__logo-img(src="img/Logo.svg", alt="Logo")
-        ul.header__nav 
-          li.header__item 
-            a.header__link(href="#") IT19とは
-          li.header__item 
-            a.header__link(href="#") できること
-          li.header__item 
-            a.header__link(href="#") 授業方法
-          li.header__item 
-            a.header__link(href="#") 最新情報
-          li.header__item 
-            a.header__link(href="#") お問い合わせ
-          li.header__item-1 
-            a.header__link-1(href="#") 応募してみる
-
+    include _header
     main 
       .wrapper 
         img.people.wow.animate__fadeInDown(src="img/people.png", alt="")
@@ -48,19 +34,18 @@ html(lang="en")
       div.bg__video
         video.bg__content(autoplay muted loop)
           source(src="img/FV動画.mp4" type="video/mp4")
-          
-        
+                    
       section
         .whatit19
-          h3.whatit19__h3
+          h3.whatit19__h3.wow.animate__fadeInUp
             span この文章はダミーです。文字の大きさ、量、字間、行間等を<br>
             span 確認するために入れています。
 
-          p.whatit19__text
+          p.whatit19__text.wow.animate__fadeInUp
             |吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で<br>
             |ニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞<br>
             |くとそは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々
-          .row-card
+          .row-card.wow.animate__fadeInUp
             .card
               .card__side.card__side--front
                 img(src="img/side-1.png", alt="")
@@ -86,7 +71,189 @@ html(lang="en")
           button.btn もっと見る
             span.btn__arrow 
               img(src="img/arrow-left.svg", alt="")
+      section 
+        .dekikoto  
+          .content-top.wow.animate__fadeInUp
+            span IT19で
+            h3 できること
+            p SERVICE INFO
+          .content-txt.wow.animate__fadeInUp 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+                      |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している    
+          ul.wow.animate__fadeInUp 
+            li  
+              a(href="")
+                .img_area 
+                .text_area  
+                  h2 資格取得
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+            li  
+              a(href="")
+                .img_area 
+                .text_area  
+                  h2 ITのこと
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+            li  
+              a(href="")
+                .img_area 
+                .text_area  
+                  h2 マネジメント研修
+                  p 吾輩は猫である。名前はまだ無い。<br>
+                    |どこで生れたかとんと見当がつかぬ
+          button.btn もっと見る
+            span.btn__arrow 
+              img(src="img/arrow-left.svg", alt="") 
+      section 
+        .IT19
+          .content-top
+            h3 IT19受講の流れ
+            span COURSE FLOW
+          .content-txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+                      |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+          .wrap-box 
+            .content-box 
+              img(src="img/Mask Group.png", alt="")
+              .txt 
+                h1 受講
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+            i.fa.fa-caret-down
 
+          .wrap-box 
+            .content-box 
+              img(src="img/Mask Group_2.png", alt="")
+              .txt 
+                h1 半年で成長!
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ 
+            i.fa.fa-caret-down
+
+          .wrap-box 
+            .content-box 
+              img(src="img/Mask Group_3.png", alt="")
+              .txt 
+                h1 職を手に
+                p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ
+      section 
+        .container-feature
+          
+          .box-feature
+            .back   
+              p feature
+            .front 
+              .content 
+                h3 IT19の特長
+                span FEATURE
+                .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+                    |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+              
+              .wrap-box-feature 
+                
+                .content-box.feature_1
+                  span 01
+                  img(src="img/feature_1.png", alt="")
+                  h3 技術者指導
+                  p 吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ<br>
+                    |吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ
+                .content-box.feature_2
+                  span 02
+                  img(src="img/feature_2.png", alt="")
+                  h3 実機使用
+                  p 吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ<br>
+                    |吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ
+                .content-box.feature_3
+                  span 03
+                  img(src="img/feature_3.png", alt="")
+                  h3 いつでも学習可能
+                  p 吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ<br>
+                    |吾輩は猫である。名前はまだ無い。<br>どこで生れたかとんと見当がつかぬ
+        .section-bottom
+          .section-bottom-txt
+            h3 まずは気軽に無料相談してみませんか？
+            p お悩みやご相談があればお気軽にご相談ください。
+
+          button.btn 無料相談はこちら
+              span.btn__arrow 
+                img(src="img/arrow-left.svg", alt="") 
+
+      section.section-two
+        .content-txt
+          h3 授業方法
+          span CLASS METHODS
+          .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+            |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+
+        article.sider-pro.sp-horizontal
+          .sp-slider-container
+            .header-container
+              .header-container-text
+                h3 eラーニング
+                span インターネットを利用した学習形態
+                .txt eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。
+              .header-image
+            .header-container
+              .header-container-text
+                h3 オンライン授業
+                span インターネットを利用した学習形態
+                .txt eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。
+              .header-image
+            .sp-arrows
+              .sp-arrows.sp-previous-arrow
+                i.fa.fa-caret-left
+              .sp-arrows.sp-next-arrow
+                i.fa.fa-caret-right
+      .container-three
+        .border-box 
+          .box-content 
+            h2 講師紹介
+            img(src="img/Mask Group_4.png", alt="")
+            i.fa.fa-caret-right
+        .border-box 
+          .box-content 
+            h2 講師紹介
+            img(src="img/Mask Group_4.png", alt="")
+            i.fa.fa-caret-right
+      //- Latest Info
+      section.latest-info 
+        h3 最新情報
+        span LATEST INFO
+        .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
+            |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
+        .wrap-news 
+          article 
+            .newsWrapback
+              .container-news 
+                .news-img 
+                  
+                .news-content 
+                  .news-date 
+                    h2 お知らせ
+                    p 2021.2.3
+                  .txt 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶し
+          article 
+            .newsWrapback
+              .container-news 
+                .news-img 
+                  
+                .news-content 
+                  .news-date 
+                    h2 お知らせ
+                    p 2021.2.3
+                  .txt 吾輩は猫で
+
+        button.btn もっと見る
+          span.btn__arrow 
+            img(src="img/arrow-left.svg", alt="") 
+    include _footer      
+
+          
+      
+        
+
+                
+
+
+
+        
           
 
       
