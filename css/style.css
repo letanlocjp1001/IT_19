@@ -22,6 +22,14 @@ body {
   margin: auto auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 .header__sidebar {
   width: 100%;
   position: fixed;
@@ -207,7 +215,7 @@ body {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background: #FDFAF6;
+  background: #fdfaf6;
 }
 .whatit19__h3 {
   font-size: 3rem;
@@ -565,7 +573,7 @@ body {
 
 .section-two {
   width: 100%;
-  background-color: #FDFAF6;
+  background-color: #fdfaf6;
   text-align: center;
   padding: 40px 0;
 }
@@ -868,6 +876,7 @@ body {
   line-height: 2;
   font-size: 1.4rem;
   font-weight: medium;
+  margin-bottom: 5rem;
 }
 
 main .container-wrap {
