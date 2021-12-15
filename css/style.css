@@ -780,30 +780,6 @@ body {
 * {
   margin: 0;
   padding: 0;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
-  line-height: 1.6;
-  height: 200vh;
-  margin: auto auto;
-}
-
-* {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -842,6 +818,56 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   color: #333;
   line-height: 2;
+}
+
+.question {
+  margin-top: 12rem;
+}
+.question__line {
+  background: url(../img/question.png);
+  background-position: center;
+  background-size: cover;
+  height: 1.5rem;
+}
+.question__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem;
+}
+.question__item {
+  width: 225px;
+  height: 70px;
+  border-radius: 10rem;
+}
+.question__link {
+  font-size: 2.2rem;
+  padding-left: 1rem;
+  color: black;
+}
+
+.heading__h2 {
+  color: #15c2c4;
+  font-size: 37px;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.heading__h4 {
+  text-align: center;
+  color: #15c2c4;
+  font-family: "futura-pt", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 13px;
+  padding: 2rem 1rem;
+}
+
+.heading__p {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.4rem;
+  font-weight: medium;
 }
 
 main .container-wrap {
@@ -943,56 +969,6 @@ main .section .container-box .border-box p {
   color: #15c2c4;
   text-align: center;
   padding: 20px;
-}
-
-.question {
-  margin-top: 12rem;
-}
-.question__line {
-  background: url(../img/question.png);
-  background-position: center;
-  background-size: cover;
-  height: 1.5rem;
-}
-.question__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 10rem;
-}
-.question__item {
-  width: 225px;
-  height: 70px;
-  border-radius: 10rem;
-}
-.question__link {
-  font-size: 2.2rem;
-  padding-left: 1rem;
-  color: black;
-}
-
-.heading__h2 {
-  color: #15c2c4;
-  font-size: 37px;
-  text-align: center;
-  padding-top: 3rem;
-}
-
-.heading__h4 {
-  text-align: center;
-  color: #15c2c4;
-  font-family: "futura-pt", sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 13px;
-  padding: 2rem 1rem;
-}
-
-.heading__p {
-  text-align: center;
-  line-height: 2;
-  font-size: 1.4rem;
-  font-weight: medium;
 }
 
 footer {
