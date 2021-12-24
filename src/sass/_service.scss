@@ -1,0 +1,55 @@
+.service {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  &__boxs {
+    width: 914px;
+    height: 510px;
+  }
+  &__box {
+    position: relative;
+  }
+  &__text {
+    margin-bottom: 8rem;
+    margin-top: 2.4rem;
+    font-size: 1.6rem;
+  }
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+
+    div {
+      width: 70px;
+      height: 70px;
+      margin-right: 2rem;
+      background: $color-white;
+      box-shadow: 6px 6px 0 $color-primary;
+      text-align: center;
+    }
+    span {
+      font-size: 34pt;
+      font-weight: bold;
+    }
+  }
+}
+
+// === SCHEDULE === //
+.schedule {
+  &__title {
+    text-align: center;
+    h3 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    p {
+      margin: auto;
+      width: 670px;
+      font-size: 1.6rem;
+      font-weight: medium;
+    }
+  }
+}
+// ===TABLE=== //

@@ -10,7 +10,7 @@
     justify-content: center;
     grid-template-columns: repeat(12, 1fr);
     transition: all 0.4s linear;
-    z-index: 1;
+    z-index: 10000;
   }
   &__nav {
     justify-content: space-around;

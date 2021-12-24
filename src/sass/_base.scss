@@ -37,7 +37,6 @@ html {
 body {
   font-family: $font-primary;
   font-weight: 300;
-  line-height: 1.6;
   height: 200vh;
   margin: auto auto;
 }
@@ -46,4 +45,12 @@ a {
 }
 li {
   list-style: none;
+}
+
+.heading-h2 {
+  font-size: 4rem;
+  color: $color-primary;
+  padding-bottom: 8rem;
+  padding-top: 8rem;
+  text-align: center;
 }
