@@ -1,0 +1,108 @@
+.wrapper {
+  // display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .wrapper-content {
+    .wrapper-content-top {
+      position: relative;
+      .step {
+        position: absolute;
+        top: -75px;
+        left: 0;
+      }
+      p {
+        font-size: 16px;
+        border: 2px solid $color-black;
+        padding: 10px 30px;
+        border-radius: 10px;
+        // margin-bottom: 22px ;
+      }
+      img {
+        margin: 33px 0;
+      }
+      .txt {
+        font-size: 16px;
+        font-weight: 500;
+        width: 186px;
+      }
+    }
+  }
+}
+
+.section {
+  width: 100%;
+  background-color: $color-whatit19;
+  text-align: center;
+  padding: 40px 0;
+  .content {
+    margin: 2% 0;
+    h3 {
+      font-size: 40px;
+      color: $color-primary;
+    }
+    span {
+      font-size: 13px;
+      font-weight: bold;
+      color: $color-primary;
+    }
+    .txt {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: 2%;
+      line-height: 3;
+    }
+  }
+
+  .sider-pro {
+    display: flex;
+    position: relative;
+    box-sizing: content-box;
+    .sp-slider-container {
+      margin: auto !important;
+    }
+    .header-container {
+      display: flex;
+      position: relative;
+      width: 680px;
+      height: 399px;
+      background-color: $color-white;
+      border-radius: 10px;
+      margin: 10% 0;
+      .header-container-text {
+        width: 50%;
+        font-size: 12px;
+        font-weight: 200;
+        letter-spacing: 4px;
+        color: white;
+        text-align: start;
+        margin: 100px 0 0 40px;
+        h3 {
+          font-size: 37px;
+          color: #000;
+          border-bottom: 3px dashed $color-secondary;
+          margin-bottom: 10%;
+        }
+        span {
+          font-size: 17px;
+          font-weight: bold;
+          color: #000;
+        }
+        .txt {
+          font-size: 15px;
+          font-weight: 500;
+          color: #000;
+          margin-top: 10%;
+        }
+      }
+      .header-image {
+        position: relative;
+        width: 45%;
+        background: gray;
+        background-blend-mode: darken;
+        border-radius: 10px 10px 10px 0;
+        clip-path: polygon(30% 0, 0 0, 100% 0, 100% 100%, 0 100%);
+        transition: all 0.3s;
+      }
+    }
+  }
+}

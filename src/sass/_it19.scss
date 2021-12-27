@@ -104,5 +104,88 @@ main {
         }
       }
     }
+    .container-content {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      span {
+        font-size: 117px;
+        font-family: $font-display-1;
+        font-weight: bold;
+        -webkit-text-stroke: 2px $color-secondary-dark;
+        color: $color-white;
+        position: absolute;
+        top: -110px;
+        margin-left: 17%;
+        z-index: -1;
+        &:nth-child(odd) {
+          // margin-right: 17%;
+          left: 0;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+        margin-left: 6%;
+        letter-spacing: 3px;
+        text-align: start;
+        &.txt {
+          margin-left: 0;
+          margin-right: 6%;
+        }
+      }
+      .content-txt {
+        margin-left: 10%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        .flex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 5%;
+          .c_txt {
+            font-size: 20px;
+            font-weight: bold;
+            width: 15%;
+            color: $color-white;
+            border-radius: 4px;
+            &.bg_color_1 {
+              background: $color-primary;
+            }
+            &.bg_color_2 {
+              background: $color-secondary-dark;
+            }
+            &.bg_color_3 {
+              background: $color-orange-2;
+            }
+            &.bg_color_4 {
+              color: $color-black;
+              background: $color-white;
+              border: 1px black solid;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.cool {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  background: linear-gradient(#d16ba5, #9a9ae1, #5ffbf1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  .pacman {
+    width: 0px;
+    height: 70px;
+    border: 70px solid red;
+    border-bottom-color: transparentize($color: black, $amount: -0);
   }
 }
