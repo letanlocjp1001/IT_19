@@ -3,25 +3,34 @@
   justify-content: space-around;
   align-items: center;
   text-align: center;
-  .method-content {
+  &__arrow {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+  &__content {
     width: 20rem;
     height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     p {
+      position: absolute;
       font-size: 16px;
-      border: 2px solid $color-black;
-      padding: 10px 15px;
-      border-radius: 10px;
-    }
-    img {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
     }
     .txt {
       font-size: 16px;
       font-weight: 500;
       width: 186px;
     }
+  }
+  &__img {
+    width: 16rem;
+    height: auto;
   }
 }
 
@@ -52,11 +61,12 @@
     .header-container {
       display: flex;
       position: relative;
-      width: 920px;
-      height: 400px;
+      width: 914px;
+      height: 390px;
       background-color: $color-white;
       border-radius: 10px;
       margin: 10% 0;
+      overflow: hidden;
       .header-container-text {
         width: 50%;
         font-size: 12px;
@@ -85,8 +95,7 @@
       }
       .header-image {
         position: relative;
-        width: 45%;
-        background: gray;
+        width: 50%;
         background-blend-mode: darken;
         border-radius: 10px 10px 10px 0;
         clip-path: polygon(30% 0, 0 0, 100% 0, 100% 100%, 0 100%);
