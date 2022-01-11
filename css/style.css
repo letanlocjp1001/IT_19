@@ -487,7 +487,7 @@ li {
 }
 .container-feature .box-feature .back {
   position: absolute;
-  top: 0;
+  top: 100px;
 }
 .container-feature .box-feature .back p {
   font-family: "elevon", sans-serif;
@@ -501,20 +501,20 @@ li {
   width: 100%;
   z-index: 999;
 }
-.container-feature .box-feature .front .content {
+.container-feature .box-feature .front .content-h3 {
   margin-bottom: 15%;
 }
-.container-feature .box-feature .front .content h3 {
+.container-feature .box-feature .front .content-h3 h3 {
   font-size: 40px;
   color: #15c2c4;
   margin-bottom: 2%;
 }
-.container-feature .box-feature .front .content span {
+.container-feature .box-feature .front .content-h3 span {
   font-size: 13px;
   font-weight: bold;
   color: #15c2c4;
 }
-.container-feature .box-feature .front .content .txt {
+.container-feature .box-feature .front .content-h3 .txt {
   font-size: 14px;
   font-weight: 400;
   color: #000;
@@ -536,11 +536,11 @@ li {
 .container-feature .box-feature .front .wrap-box-feature .content-box.feature_1 span,
 .container-feature .box-feature .front .wrap-box-feature .feature_2 span,
 .container-feature .box-feature .front .wrap-box-feature .feature_3 span {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
   position: absolute;
   top: -150px;
   left: 0;
-  -webkit-text-stroke: 1px #ffe600;
+  -webkit-text-stroke: 2.5px #ffe600;
   color: #fff;
   font-weight: bold;
   font-size: 117px;
@@ -1201,6 +1201,7 @@ tr td:not(:last-child) {
   margin-bottom: 3rem;
 }
 .method__content {
+  position: relative;
   width: 20rem;
   height: 30rem;
   display: flex;
@@ -1223,6 +1224,29 @@ tr td:not(:last-child) {
 .method__img {
   width: 16rem;
   height: auto;
+}
+.method__step {
+  position: absolute;
+  top: -30px;
+  width: 5.5rem;
+  height: 5.5rem;
+  background-color: #15c2c4;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  line-height: 1;
+}
+.method__text {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.method__number {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .content {
