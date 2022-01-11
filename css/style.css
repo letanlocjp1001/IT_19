@@ -1414,6 +1414,254 @@ tr td:not(:last-child) {
   font-weight: 500;
 }
 
+main nav {
+  width: 100%;
+}
+main nav ul {
+  width: 804px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px #000 solid;
+  border-radius: 10px;
+}
+main nav ul li {
+  list-style: none;
+  padding: 0 15%;
+}
+main nav ul li:first-child {
+  border-right: 2px #000 solid;
+}
+main nav ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+main .wrapper-box {
+  text-align: center;
+  padding: 8% 0;
+}
+main .wrapper-box .wrapper-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 4%;
+}
+main .wrapper-box .wrapper-flex .border-box {
+  max-width: 356px;
+  height: 190px;
+  position: relative;
+  border: 3px black solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+main .wrapper-box .wrapper-flex .border-box.center {
+  margin: 0 1%;
+}
+main .wrapper-box .wrapper-flex .border-box .content-box {
+  position: relative;
+  top: -45px;
+}
+main .wrapper-box .wrapper-flex .border-box img {
+  background: #fff;
+  padding: 0 20%;
+}
+main .wrapper-box .wrapper-flex .border-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+main .wrapper-box .wrapper-flex .border-box p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 25px;
+}
+main .bg-section {
+  width: 100%;
+  padding: 3% 10%;
+  background: #15c2c4;
+  text-align: center;
+}
+main .bg-section h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  display: grid;
+}
+main .bg-section h1 i {
+  padding: 2% 0;
+  letter-spacing: 24px;
+}
+main .bg-section .wrap {
+  position: relative;
+  padding: 40px 0;
+  border-radius: 20px;
+  background: #fff;
+  margin: auto;
+  text-align: center;
+  width: 1100px;
+}
+main .bg-section .wrap h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+main .bg-section .wrap p {
+  font-size: 16px;
+}
+main .bg-section .wrap .main-div,
+main .bg-section .wrap .loggedin-div {
+  padding: 0 10%;
+  margin: 0px auto;
+  margin-top: 150px;
+}
+main .bg-section .wrap .main-div .flex,
+main .bg-section .wrap .loggedin-div .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+main .bg-section .wrap .main-div .flex label,
+main .bg-section .wrap .loggedin-div .flex label {
+  font-size: 20px;
+  font-weight: bold;
+}
+main .bg-section .wrap .main-div .flex input,
+main .bg-section .wrap .loggedin-div .flex input {
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #fff;
+  padding: 15px;
+  outline: none;
+  width: 660px;
+  font-weight: 700;
+}
+main .bg-section .wrap .main-div .flex input:focus,
+main .bg-section .wrap .loggedin-div .flex input:focus {
+  border: 1px solid #999;
+}
+main .bg-section .wrap .main-div .flex textarea,
+main .bg-section .wrap .loggedin-div .flex textarea {
+  width: 660px;
+  height: 150px;
+  padding: 5px 10px;
+}
+main .bg-section .wrap .border-box {
+  padding: 40px 20px;
+  width: 60%;
+  margin: auto;
+  border: 3px #000 solid;
+  border-radius: 10px;
+}
+main .bg-section .wrap .border-box h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+main .bg-section .wrap .border-box p {
+  font-size: 16px;
+  line-height: 35px;
+  font-weight: 400;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+}
+main .bg-section .wrap .form-check {
+  margin: 4% 0;
+  font-size: 16px;
+}
+main .title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+main .title h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #15c2c4;
+}
+main .question {
+  background: #fff;
+  border: 3px #000 solid;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2em;
+}
+main .question .question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+main .question .question-title .bg-q {
+  background: #15c2c4;
+  padding: 1%;
+  width: 120px;
+}
+main .question .question-title .bg-q span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "futura-pt", sans-serif;
+  color: #fceb3b;
+}
+main .question .question-title p {
+  font-size: 16px;
+  margin-bottom: 0;
+  letter-spacing: 0.25rem;
+  color: #000;
+}
+main .question .question-title .question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  margin-right: 10px;
+  color: #ffe600;
+  transition: all 0.3s linear;
+}
+main .question .question-title .question-btn i {
+  font-size: 30px;
+}
+main .question .question-title .question-btn:hover {
+  transform: rotate(90deg);
+}
+main .question .question-text {
+  text-align: center;
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .question .question-text p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+.minus-icon {
+  display: none;
+}
+
 footer {
   position: relative;
 }
