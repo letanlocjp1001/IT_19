@@ -121,6 +121,7 @@
 
 .row-card {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 10rem;
@@ -130,6 +131,7 @@
   text-align: center;
   border: none !important;
   background: none !important;
+  margin: 1rem;
   &__side {
     transition: all 0.35s linear;
     width: 318px;
@@ -240,6 +242,7 @@
   }
   ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -298,6 +301,7 @@
   }
   h3 {
     font-size: 40px;
+    font-weight: 700;
     color: $color-primary;
   }
   span {
@@ -321,7 +325,7 @@
     padding: 20px;
     border-radius: 10px;
     &:last-child {
-      width: calc(100% - 549px);
+      width: 800px;
     }
     .content-box {
       display: flex;
@@ -388,6 +392,7 @@
       .content-h3 {
         margin-bottom: 15%;
         h3 {
+          font-weight: 700;
           font-size: 40px;
           color: $color-primary;
           margin-bottom: 2%;
@@ -408,6 +413,7 @@
 
       .wrap-box-feature {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         .content-box.feature_1,
@@ -473,6 +479,7 @@
     h3 {
       font-size: 37px;
       color: $color-primary;
+      font-weight: 700;
     }
     span {
       font-size: 13px;
@@ -708,6 +715,7 @@
   background: $color-white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   padding: 10%;
   .border-box {

@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&amp;family=Quicksand:wght@400;500&amp;display=swap">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.typekit.net/lnd2ehr.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/animate/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" style="image/png" href="img/favicon.svg">
     <script src="./js/app.js">  </script>
     <script src="js/wow.min.js"> </script>
@@ -20,7 +20,8 @@
   <body>
     <header class="header">
       <div class="header__sidebar" id="header__sidebar"> 
-        <div class="header__logo"><a href="index.html"> <img class="header__logo-img" src="img/logo.svg" alt="Logo"></a></div>
+        <div class="header__logo"><a href="index.html"> <img class="header__logo-img" src="img/logo.svg" alt="Logo"></a><a href="index.html"> <img class="header__logo-phone" src="img/logophone.svg" alt="Logo"></a></div>
+        <div id="menu-bar"> <img src="img/bar.svg" alt="bar"></div>
         <ul class="header__nav"> 
           <li class="header__item"> <a class="header__link" href="it19.html">IT19とは</a></li>
           <li class="header__item"> <a class="header__link" href="service.html">できること</a></li>
@@ -203,7 +204,7 @@
               <div class="carousel-item-content">
                 <div class="content-txt">
                   <h3>eラーニング</h3><span>インターネットを利用した学習形態</span>
-                  <div class="txt">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
+                  <div class="txt text-none">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
                 </div><img src="img/index-4.png" alt="">
               </div>
             </div>
@@ -211,7 +212,7 @@
               <div class="carousel-item-content">
                 <div class="content-txt">
                   <h3>eラーニング</h3><span>インターネットを利用した学習形態</span>
-                  <div class="txt">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
+                  <div class="txt text-none">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
                 </div><img src="img/index-5.png" alt="">
               </div>
             </div>
@@ -219,8 +220,8 @@
               <div class="carousel-item-content">
                 <div class="content-txt">
                   <h3>eラーニング</h3><span>インターネットを利用した学習形態</span>
-                  <div class="txt">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
-                </div><img src="img/img_1.png" alt="">
+                  <div class="txt text-none">eラーニングはパソコンやタブレット、スマートフォン等のデバイスを活用しネットワークを介して学習します。</div>
+                </div><img src="img/index-5.png" alt="">
               </div>
             </div>
           </div>
@@ -254,7 +255,7 @@
                     <h2>お知らせ</h2>
                     <p>2021.2.3</p>
                   </div>
-                  <div class="txt">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶し</div>
+                  <div class="txt">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で</div>
                 </div>
               </div>
             </div>
@@ -268,7 +269,7 @@
                     <h2>お知らせ</h2>
                     <p>2021.2.3</p>
                   </div>
-                  <div class="txt">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶し</div>
+                  <div class="txt">吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所で</div>
                 </div>
               </div>
             </div>
@@ -276,6 +277,7 @@
         </div>
         <button class="btn">もっと見る<span class="btn__arrow"> <img src="img/arrow-left.svg" alt=""></span></button>
       </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </main>
     <section class="question"> 
       <div class="question__line"></div>
@@ -312,39 +314,39 @@
             </div>
           </div>
           <div class="footer__bottom">         
-            <div class="table">
+            <div class="table1">
               <ul>
-                <li class="table__father"> <a href="it19.html">IT19とは？</a></li>
-                <li class="table__children">IT19について</li>
-                <li class="table__children">強み</li>
-                <li class="table__children">講師紹介</li>
-                <li class="table__children">生徒の声</li>
+                <li class="table1__father"> <a href="it19.html">IT19とは？</a></li>
+                <li class="table1__children">IT19について</li>
+                <li class="table1__children">強み</li>
+                <li class="table1__children">講師紹介</li>
+                <li class="table1__children">生徒の声</li>
               </ul>
               <ul> 
-                <li class="table__father"> <a href="service.html">できること</a></li>
-                <li class="table__children">資格取得</li>
-                <li class="table__children">ITのこと</li>
-                <li class="table__children">マネジメント研究</li>
-                <li class="table__children">授業内容表</li>
+                <li class="table1__father"> <a href="service.html">できること</a></li>
+                <li class="table1__children">資格取得</li>
+                <li class="table1__children">ITのこと</li>
+                <li class="table1__children">マネジメント研究</li>
+                <li class="table1__children">授業内容表</li>
               </ul>
               <ul>
-                <li class="table__father"> <a href="method.html">授業方法</a></li>
-                <li class="table__children">IT19受講の流れ</li>
-                <li class="table__children">IT19の利用手順</li>
-                <li class="table__children">授業方法</li>
+                <li class="table1__father"> <a href="method.html">授業方法</a></li>
+                <li class="table1__children">IT19受講の流れ</li>
+                <li class="table1__children">IT19の利用手順</li>
+                <li class="table1__children">授業方法</li>
               </ul>
               <ul>
-                <li class="table__father"><a href="news.html">最新情報</a></li>
-                <li class="table__children">お知らせ</li>
-                <li class="table__children">Instagram</li>
-                <li class="table__children">Twitter</li>
+                <li class="table1__father"><a href="news.html">最新情報</a></li>
+                <li class="table1__children">お知らせ</li>
+                <li class="table1__children">Instagram</li>
+                <li class="table1__children">Twitter</li>
               </ul>
               <ul>
-                <li class="table__father"> <a href="contact.html">お問い合わせ</a></li>
-                <li class="table__children">お問い合わせ</li>
-                <li class="table__children">よくある質問</li>
-                <li class="table__children">講師紹介</li>
-                <li class="table__children">生徒の声</li>
+                <li class="table1__father"> <a href="contact.html">お問い合わせ</a></li>
+                <li class="table1__children">お問い合わせ</li>
+                <li class="table1__children">よくある質問</li>
+                <li class="table1__children">講師紹介</li>
+                <li class="table1__children">生徒の声</li>
               </ul>
             </div>
           </div>

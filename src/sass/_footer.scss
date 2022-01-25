@@ -53,20 +53,20 @@ footer {
     }
   }
 }
-.table {
+.table1 {
   display: flex;
   justify-content: space-around;
   ul {
-    border-top: none !important;
-    &__father {
-      font-size: 1.5rem;
-      font-weight: bold;
-      padding-bottom: 1rem;
-      list-style: none;
-      a {
-        color: $color-primary !important;
-        text-decoration: none !important;
-      }
+    border-top: none;
+  }
+  &__father {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $color-primary;
     }
   }
 }
