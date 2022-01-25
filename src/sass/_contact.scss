@@ -13,15 +13,19 @@ main {
       li {
         list-style: none;
         padding: 0 15%;
-        &:first-child {
-          border-right: 2px $color-black solid;
-        }
+        // &:first-child {
+        //   border-right: 2px $color-black solid;
+        // }
         a {
           font-size: 16px;
           font-weight: bold;
           text-decoration: none;
           color: $color-black;
         }
+      }
+      .lm-separator {
+        font-size: 16px;
+        font-weight: bold;
       }
     }
   }

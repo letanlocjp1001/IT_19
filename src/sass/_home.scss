@@ -128,8 +128,10 @@
 .card {
   perspective: 1500rem;
   text-align: center;
+  border: none !important;
+  background: none !important;
   &__side {
-    transition: all 0.2s linear;
+    transition: all 0.35s linear;
     width: 318px;
     height: 318px;
     border: 1rem solid $color-primary;
@@ -175,24 +177,27 @@
 }
 .btn {
   position: relative;
-  width: 36rem;
-  height: 6rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  background-color: $color-secondary;
-  border-radius: 3rem;
-  padding: 1rem;
-  margin: auto;
-  transition: all 0.2s linear;
-  font-size: 1.8rem;
-  font-weight: bold;
-  border: 2px solid black;
+  width: 36rem !important;
+  height: 6rem !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  border: none !important;
+  background-color: $color-secondary !important;
+  border-radius: 3rem !important;
+  padding: 1rem !important;
+  margin: auto !important;
+  transition: all 0.2s linear !important;
+  font-size: 1.8rem !important;
+  font-weight: bold !important;
+  border: 2px solid black !important;
   &__arrow img {
-    position: absolute;
-    top: 28%;
-    right: 10%;
+    position: absolute !important;
+    top: 28% !important;
+    right: 10% !important;
+  }
+  a {
+    text-decoration: none !important;
   }
 }
 .btn:hover {
@@ -220,6 +225,7 @@
     }
     h3 {
       font-size: 50px;
+      font-weight: bold;
     }
     p {
       font-size: 13px;
@@ -243,9 +249,9 @@
       list-style: none;
       width: 339px;
       margin-top: 30px;
-      border: 3px solid #119c9d;
+      border: 3px solid $color-primary;
       border-radius: 10px;
-      box-shadow: 8px 8px #119c9d;
+      box-shadow: 8px 8px $color-primary;
       transition: all 0.3s;
       &:hover {
         transform: translateY(-20px);
@@ -578,6 +584,125 @@
     }
   }
 }
+
+#carouselExampleIndicators {
+  padding: 40px 0;
+  text-align: center;
+  h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: $color-primary;
+  }
+  .carousel-indicators [data-bs-target] {
+    width: auto;
+    height: 10px;
+    box-sizing: border-box;
+    background: $color-primary;
+    border-radius: 100%;
+    background: $color-btn-gray;
+    &.active {
+      background: $color-primary;
+      opacity: 1;
+    }
+  }
+
+  .carousel-inner {
+    .carousel-item {
+      padding: 3% 0;
+      .carousel-item-content {
+        width: 815px;
+        height: 399px;
+        background: $color-white;
+        display: flex;
+        margin: auto;
+        border-radius: 10px;
+        .content-txt {
+          width: 50%;
+          font-size: 12px;
+          font-weight: 200;
+          letter-spacing: 4px;
+          color: white;
+          text-align: start;
+          margin: 100px 40px 0 40px;
+          h3 {
+            font-size: 37px;
+            color: #000;
+            border-bottom: 3px dashed $color-secondary;
+            margin-bottom: 10%;
+          }
+          h2 {
+            font-size: 37px;
+            color: $color-black;
+            font-weight: bold;
+            margin-bottom: 10%;
+          }
+          h1 {
+            font-size: 37px;
+            font-family: $font-display-1;
+            color: $color-primary;
+            opacity: 0.5;
+            margin-bottom: 10%;
+          }
+          span {
+            font-size: 17px;
+            font-weight: bold;
+            color: #000;
+          }
+          .txt {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            margin-top: 10%;
+            line-height: 2 !important;
+          }
+        }
+
+        img {
+          width: 372px;
+          right: 0;
+          border-radius: 0 10px 10px 0;
+          clip-path: polygon(30% 0, 0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+    }
+  }
+  .carousel-control-prev {
+    position: absolute;
+    left: 20%;
+    margin: auto;
+    width: 46px;
+    height: 46px;
+    background: $color-white;
+    border-radius: 50%;
+    border: 2px $color-black solid;
+    opacity: 1;
+    i {
+      position: absolute;
+      left: 14px;
+      font-size: 30px;
+      text-align: center;
+      color: $color-primary;
+    }
+  }
+  .carousel-control-next {
+    position: absolute;
+    right: 20%;
+    margin: auto;
+    width: 46px;
+    height: 46px;
+    background: $color-white;
+    border-radius: 50%;
+    border: 2px $color-black solid;
+    opacity: 1;
+    i {
+      position: absolute;
+      right: 14px;
+      font-size: 30px;
+      color: $color-primary;
+    }
+  }
+}
+
 .container-three {
   width: 100%;
   background: $color-white;

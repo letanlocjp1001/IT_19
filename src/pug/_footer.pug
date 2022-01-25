@@ -1,5 +1,5 @@
 section.question 
-  .question__line 
+  .question__line
   h2.heading__h2 お問い合わせ
   h4.heading__h4 Contact
   p.heading__p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br/>
@@ -8,7 +8,7 @@ section.question
   ul.question__btn
     li.btn.question__item
       img(src="./img/question_1.svg", alt="")
-      a.question__link(href="#") 資料請求
+      a.question__link(href="register.html") 資料請求
     li.btn.question__item
       img(src="./img/question_2.svg", alt="")
       a.question__link(href="contact.html") お問い合わせ
@@ -25,8 +25,9 @@ section.question
       img(src="./img/facebook.svg", alt="")
     .footer
       .footer__top 
-        .footer__logo 
-          img(src="./img/logo.svg", alt="")
+        .footer__logo
+          a(href="index.html")  
+            img(src="./img/logo.svg", alt="")
         .address
           .address__left 
             p 住所
@@ -42,29 +43,34 @@ section.question
       .footer__bottom          
         .table
           ul
-            li.table__father IT19とは？
+            li.table__father 
+              a(href="it19.html") IT19とは？
             li.table__children IT19について
             li.table__children 強み
             li.table__children 講師紹介
             li.table__children 生徒の声
           ul 
-            li.table__father できること
+            li.table__father 
+              a(href="service.html") できること
             li.table__children 資格取得
             li.table__children ITのこと
             li.table__children マネジメント研究
             li.table__children 授業内容表
           ul
-            li.table__father 授業方法
+            li.table__father 
+              a(href="method.html") 授業方法
             li.table__children IT19受講の流れ
             li.table__children IT19の利用手順
             li.table__children 授業方法
           ul
-            li.table__father 最新情報
+            li.table__father
+              a(href="news.html") 最新情報
             li.table__children お知らせ
             li.table__children Instagram
             li.table__children Twitter
           ul
-            li.table__father お問い合わせ
+            li.table__father 
+              a(href="contact.html") お問い合わせ
             li.table__children お問い合わせ
             li.table__children よくある質問
             li.table__children 講師紹介

@@ -10,6 +10,8 @@ head
     link(rel="stylesheet", href="css/animate.css")
     link(rel="stylesheet", href="css/animate/animate.css")
     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     link(rel="shortcut icon", style="image/png", href="img/favicon.svg")
     script(src="./js/app.js")   
     script(src="js/wow.min.js") 
@@ -19,9 +21,10 @@ head
 body
     include _header
     .container 
+        
         .back
-            p.text feature
-        .front  
+            marquee(behavior="", direction="").text feature
+        .front.wow.animate__zoomIn  
             h1 IT19とは？
             p    吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。<br>
                 |何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。
@@ -32,10 +35,13 @@ body
                     ul 
                         li 
                             a(href="") IT19について
+                        span.lm-separator |
                         li 
                             a(href="") 強み
+                        span.lm-separator |
                         li 
                             a(href="") 講師紹介
+                        span.lm-separator |
                         li 
                             a(href="") 生徒の声
                 h1  この文章はダミーです。文字の大きさ、量、字間、<br>
@@ -50,10 +56,10 @@ body
                     |吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で<br>
                     |一番獰悪な種族であったそうだ。この書生というのは時々<br>
                     |吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。
-        section.section 
-            .container-section
+        section.section
+            .container-section.wow.animate__fadeInUp 
                 h1 IT19の特長
-            .container-box 
+            .container-box.wow.animate__fadeInUp  
                 .border-box 
                     span 01
                     p   技術者が教える！
@@ -67,7 +73,7 @@ body
                     p   技術者が教える！
                         |なんとかなんとかなんとか！
         section.section 
-            .container-section 
+            .container-section.wow.animate__fadeInUp 
                 h1 技術者が教える！なんとかなんとかなんとか！
                 .container-content 
                     img(src="img/img_5.png", alt="")
@@ -81,7 +87,7 @@ body
                         |うのは時々吾輩は猫である。名前はまだ無い。ど<br>
                         |こで生れたかとんと見当がつかぬ。
 
-            .container-section 
+            .container-section.wow.animate__fadeInUp 
                 h1 実機使う！なんとかなんとかなんとか！
                 .container-content 
                     
@@ -96,7 +102,7 @@ body
                         |こで生れたかとんと見当がつかぬ。
                     img(src="img/img_6.png", alt="")
             
-            .container-section 
+            .container-section.wow.animate__fadeInUp  
                 h1 就職後のサポート！なんとかなんとかなんとか！
                 .container-content 
                     img(src="img/img_7.png", alt="")
@@ -110,24 +116,129 @@ body
                         |うのは時々吾輩は猫である。名前はまだ無い。ど<br>
                         |こで生れたかとんと見当がつかぬ。
         section.section 
-            .container-section   
+            .container-section.wow.animate__fadeInUp    
                 h1 IT19で身に付くチカラ
+                p １人の生徒に対し、９つの力がつく授業アプローチを行います。
                 .container-content 
-                    .img 
-                        img(src="img/img_8.png", alt="")
-                    .content-txt 
-                        .flex
-                            .c_txt.bg_color_1 理解力
-                            p 特定分野だけを学習するのではなく、広くIT知識の基礎を身につける事で相互補完的に理解が深まる。
-                        .flex
-                            .c_txt.bg_color_2 定着力
-                            p 単なる知識としての学習ではなく、現役エンジニアから仕事で実践できる生きた情報を得られる。
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_1.png", alt="")
+                            h2 理解力
+                            .txt   物事の仕組みや状況を正しく<br>
+                                |判断する力
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_2.png", alt="")
+                            h2 定着力
+                            .txt 定期的に問題を繰り返してア<br>ウトプットを重ねる事で知識<br>を定着させる力
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_3.png", alt="")
+                            h2 実践力
+                            .txt 単なる知識としての学習では<br>なく、現役 エンジニアに よっ<br>て実践に結び付く力
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_4.png", alt="")
+                            h2 構想力
+                            .txt 存在しないものを存在させる力
 
-                        .flex
-                            .c_txt.bg_color_3 実践力
-                            p 単なる知識としての学習ではなく、現役エンジニアから仕事で実践できる生きた情報を得られる。
 
-                        .flex
-                            .c_txt.bg_color_4 定着力
-                            p 単なる知識としての学習ではなく、現役エンジニアから仕事で実践できる生きた情報を得られる。    
+                .container-content 
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_5.png", alt="")
+                            h2 思考力
+                            .txt  一般的にいう考える力(論理的<br>思考力)。
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_6.png", alt="")
+                            h2 集中力
+                            .txt 一つの事柄に注意を集中して<br>物事に取り組む能力。
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_7.png", alt="")
+                            h2 分析力
+                            .txt 目的意識を持って実行し、必<br>要な情報をデータから導き出<br>すための力
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_8.png", alt="")
+                            h2 注意力
+                            .txt ある一つの事柄に、心を集中<br>しつづける力。また、注意す<br>る能力。
+                    .container-content-wrap
+                        .container-content-img  
+                            img(src="img/it19_9.png", alt="")
+                            h2 変革力
+                            .txt ITを通じて社会を変革してい<br>く力
+
+
+        
+        
+        #carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
+            h1 講師紹介
+            .carousel-indicators
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1").active
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
+            .carousel-inner
+                .carousel-item.active
+                    .carousel-item-content
+                        .image
+                            img(src="img/people_2.png", alt="")
+                        .content-txt
+                            h1 Sasazaki Nonoka
+                            span ささざき ののか
+                            h2 笹嵜 希花
+                            .txt    吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                                    |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+                .carousel-item
+                    .carousel-item-content
+                        .image
+                            img(src="img/people_2.png", alt="")
+                        .content-txt
+                            h1 Sasazaki Nonoka
+                            span ささざき ののか
+                            h2 笹嵜 希花
+                            .txt    吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                                    |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+
+
+                .carousel-item
+                    .carousel-item-content
+                        .image
+                            img(src="img/people_2.png", alt="")
+                        .content-txt
+                            h1 Sasazaki Nonoka
+                            span ささざき ののか
+                            h2 笹嵜 希花
+                            .txt    吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                                    |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+                                    
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev").carousel-control-prev.prev
+                    i.fa.fa-caret-left
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next").carousel-control-next.next
+                    i.fa.fa-caret-right  
+        
+        section.section
+            .container-wrap     
+                .container-content-box
+                    h2 生徒の声
+                    .content-box
+                        .box-wrap 
+                            img(src="img/people_3.png", alt="")
+                            h3 ためになった！
+                            p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。
+                        .box-wrap 
+                            img(src="img/people_3.png", alt="")
+                            h3 ためになった！
+                            p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。
+                        .box-wrap 
+                            img(src="img/people_3.png", alt="")
+                            h3 ためになった！
+                            p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。
+                        .box-wrap 
+                            img(src="img/people_3.png", alt="")
+                            h3 ためになった！
+                            p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。
+                    
+
     include _footer
