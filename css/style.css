@@ -177,10 +177,12 @@ li {
   grid-column: 3/4;
   font-size: 1.3rem;
   font-weight: medium;
+  margin-top: 0.5rem;
 }
 .bg__text {
   grid-column: 4/12;
   font-size: 1.6rem;
+  margin-top: 0.5rem;
 }
 .bg__text marquee {
   line-height: 1.6rem;
@@ -964,6 +966,7 @@ li {
   font-family: "Noto Sans JP", sans-serif;
   color: #15c2c4;
   margin-bottom: 5%;
+  font-weight: 700;
 }
 .container .front p {
   font-size: 18px;
@@ -996,7 +999,7 @@ li {
 }
 .question__link {
   font-size: 2.2rem !important;
-  padding-left: 1rem !important;
+  padding-left: 0.5rem !important;
   color: black !important;
 }
 
@@ -1005,6 +1008,7 @@ li {
   font-size: 37px;
   text-align: center;
   padding-top: 3rem;
+  font-weight: 700;
 }
 
 .heading__h4 {
@@ -1094,7 +1098,7 @@ main .section .container-section h1 {
   font-size: 40px;
   font-weight: bold;
   color: #15c2c4;
-  margin: 3% 0;
+  margin: 5rem 0 9rem 0;
 }
 main .section .container-section p {
   font-size: 27px;
@@ -1158,10 +1162,10 @@ main .section .container-content span {
   position: absolute;
   top: -110px;
   margin-left: 17%;
-  z-index: 999;
+  z-index: -1;
 }
 main .section .container-content span:nth-child(odd) {
-  left: 0;
+  left: -18rem;
 }
 main .section .container-content p {
   font-size: 16px;

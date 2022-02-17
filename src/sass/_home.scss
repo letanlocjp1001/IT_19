@@ -46,10 +46,13 @@
     grid-column: 3/4;
     font-size: 1.3rem;
     font-weight: medium;
+    margin-top: 0.5rem;
   }
   &__text {
     grid-column: 4/12;
     font-size: 1.6rem;
+    margin-top: 0.5rem;
+
     marquee {
       line-height: 1.6rem;
     }

@@ -70,7 +70,7 @@ main {
         font-size: 40px;
         font-weight: bold;
         color: $color-primary;
-        margin: 3% 0;
+        margin: 5rem 0 9rem 0;
       }
       p {
         font-size: 27px;
@@ -140,10 +140,10 @@ main {
         position: absolute;
         top: -110px;
         margin-left: 17%;
-        z-index: 999;
+        z-index: -1;
         &:nth-child(odd) {
           // margin-right: 17%;
-          left: 0;
+          left: -18rem;
         }
       }
       p {
