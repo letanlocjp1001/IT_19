@@ -225,7 +225,7 @@ li {
 .whatit19 {
   position: relative;
   display: flex;
-  padding: 40px 0;
+  padding: 75px 0;
   width: 100%;
   justify-content: center;
   flex-direction: column;
@@ -252,7 +252,7 @@ li {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 10rem;
+  padding: 6rem;
 }
 
 .card {
@@ -758,6 +758,7 @@ li {
   display: flex;
   margin: auto;
   border-radius: 10px;
+  box-shadow: 12px 12px 0 #15c2c4;
 }
 #carouselExampleIndicators .carousel-inner .carousel-item .carousel-item-content .content-txt {
   width: 50%;
@@ -1114,9 +1115,9 @@ main .section .container-box .border-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 263px;
-  height: 263px;
-  border: 3px solid #15c2c4;
+  width: 318px;
+  height: 318px;
+  border: 1rem solid #15c2c4;
   border-radius: 100%;
 }
 main .section .container-box .border-box span {
@@ -1418,11 +1419,11 @@ tr td:not(:last-child) {
 }
 
 .content {
-  padding: 20rem 10rem;
+  padding: 11rem 10rem;
 }
 .content__box {
   text-align: center;
-  padding-bottom: 3rem;
+  padding-bottom: 6rem;
 }
 .content__box h3 {
   font-size: 40px;
@@ -1450,8 +1451,9 @@ tr td:not(:last-child) {
   height: 390px;
   background-color: #fff;
   border-radius: 10px;
-  margin: 10% 0;
+  margin: 5% 0;
   overflow: hidden;
+  box-shadow: 12px 12px 0 #15c2c4;
 }
 .section .sider-pro .header-container .header-container-text {
   width: 50%;
@@ -1487,6 +1489,10 @@ tr td:not(:last-child) {
   -webkit-clip-path: polygon(30% 0, 0 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(30% 0, 0 0, 100% 0, 100% 100%, 0 100%);
   transition: all 0.3s;
+}
+
+.bg-method {
+  background-color: #fdfaf6 !important;
 }
 
 .news {

@@ -96,7 +96,7 @@
 .whatit19 {
   position: relative;
   display: flex;
-  padding: 40px 0;
+  padding: 75px 0;
   width: 100%;
   justify-content: center;
   flex-direction: column;
@@ -127,7 +127,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 10rem;
+  padding: 6rem;
 }
 .card {
   perspective: 1500rem;
@@ -626,6 +626,7 @@
         display: flex;
         margin: auto;
         border-radius: 10px;
+        box-shadow: 12px 12px 0 $color-primary;
         .content-txt {
           width: 50%;
           font-size: 12px;
