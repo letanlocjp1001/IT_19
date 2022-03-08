@@ -298,6 +298,9 @@ main {
     position: absolute;
     animation: animate 3s infinite;
     width: 850px;
+    @media screen and (max-width: 500px) {
+      width: 500px;
+    }
     .text {
       font-family: $font-display-2;
       font-size: 150px;

@@ -36,6 +36,11 @@ li {
   padding-top: 8rem;
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  .heading-h2 {
+    font-size: 30px;
+  }
+}
 
 .header__sidebar {
   width: 100%;
@@ -666,6 +671,12 @@ li {
   padding: 20px;
   border-radius: 10px;
 }
+@media screen and (max-width: 500px) {
+  .IT19 .wrap-box {
+    width: 400px;
+    margin-bottom: 7%;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .IT19 .wrap-box {
     width: 70%;
@@ -678,6 +689,11 @@ li {
 }
 .IT19 .wrap-box:last-child {
   width: 960px;
+}
+@media screen and (max-width: 500px) {
+  .IT19 .wrap-box:last-child {
+    width: 440px;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .IT19 .wrap-box:last-child {
@@ -1635,6 +1651,11 @@ main .container-content-box .content-box .box-wrap:hover {
           animation: animate 3s infinite;
   width: 850px;
 }
+@media screen and (max-width: 500px) {
+  .container .back {
+    width: 500px;
+  }
+}
 .container .back .text {
   font-family: "elevon", sans-serif;
   font-size: 150px;
@@ -1678,8 +1699,18 @@ main .container-content-box .content-box .box-wrap:hover {
 .service__boxs {
   width: 914px;
 }
+@media screen and (max-width: 500px) {
+  .service__boxs {
+    width: 480px;
+  }
+}
 .service__box {
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  .service__box img {
+    width: 100%;
+  }
 }
 .service__text {
   margin-bottom: 8rem;
@@ -1701,9 +1732,20 @@ main .container-content-box .content-box .box-wrap:hover {
   box-shadow: 6px 6px 0 #15c2c4;
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  .service__caption div {
+    width: 38px;
+    height: 38px;
+  }
+}
 .service__caption span {
-  font-size: 34pt;
+  font-size: 34px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .service__caption span {
+    font-size: 24px;
+  }
 }
 
 .schedule__title {
@@ -1714,12 +1756,23 @@ main .container-content-box .content-box .box-wrap:hover {
   font-weight: bold;
   padding-bottom: 3rem;
 }
+@media screen and (max-width: 500px) {
+  .schedule__title h3 {
+    font-size: 28px;
+  }
+}
 .schedule__title p {
   margin: auto;
   width: 670px;
   font-size: 1.6rem;
   font-weight: medium;
   padding-bottom: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .schedule__title p {
+    width: 480px;
+    font-size: 1.2rem;
+  }
 }
 .schedule__table {
   display: flex;
@@ -1771,6 +1824,13 @@ td {
   font-size: 1.4rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 500px) {
+  th,
+td {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
 
 tr td:not(:last-child) {
   font-weight: bold;
@@ -1791,6 +1851,11 @@ tr td:not(:last-child) {
   width: 1140px;
   margin: 5rem auto;
 }
+@media screen and (max-width: 500px) {
+  .line {
+    width: 480px;
+  }
+}
 
 .method {
   display: flex;
@@ -1798,9 +1863,66 @@ tr td:not(:last-child) {
   align-items: center;
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  .method {
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+}
 .method__arrow {
   position: relative;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .method__arrow {
+    border: 2px solid #000;
+    width: 325px;
+    height: 50px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .method__arrow img {
+    display: none;
+  }
+}
+.method__group {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 500px) {
+  .method__group {
+    width: 480px;
+    flex-direction: row;
+    position: relative;
+  }
+}
+.method__group .txt {
+  font-size: 16px;
+  font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+  .method__group .txt {
+    position: absolute;
+    width: 250px;
+    top: 60px;
+    left: 200px;
+  }
+}
+.method__group .img {
+  width: 16rem;
+  height: auto;
+}
+@media screen and (max-width: 500px) {
+  .method__group .img {
+    width: 12rem;
+    position: absolute;
+    left: 35px;
+    top: 30px;
+  }
 }
 .method__content {
   position: relative;
@@ -1810,6 +1932,13 @@ tr td:not(:last-child) {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  .method__content {
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+}
 .method__content p {
   position: absolute;
   font-size: 16px;
@@ -1818,14 +1947,10 @@ tr td:not(:last-child) {
   transform: translate(-50%, -50%);
   width: 100%;
 }
-.method__content .txt {
-  font-size: 16px;
-  font-weight: 500;
-  width: 186px;
-}
-.method__img {
-  width: 16rem;
-  height: auto;
+@media screen and (max-width: 500px) {
+  .method__content p {
+    font-weight: bold;
+  }
 }
 .method__step {
   position: absolute;
@@ -1842,25 +1967,59 @@ tr td:not(:last-child) {
   color: white;
   line-height: 1;
 }
+@media screen and (max-width: 500px) {
+  .method__step {
+    border-radius: 10px;
+    flex-direction: row;
+    width: 90px;
+    height: 20px;
+    top: 102px;
+  }
+}
 .method__text {
   font-size: 1.4rem;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .method__text {
+    font-size: 1.6rem;
+  }
 }
 .method__number {
   font-size: 2.5rem;
   font-weight: bold;
 }
+@media screen and (max-width: 500px) {
+  .method__number {
+    font-size: 1.6rem;
+  }
+}
 
 .content {
   padding: 11rem 10rem;
+}
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 3rem 0;
+  }
 }
 .content__box {
   text-align: center;
   padding-bottom: 6rem;
 }
+@media screen and (max-width: 500px) {
+  .content__box {
+    padding: 2rem 2rem 0 2rem;
+  }
+}
 .content__box h3 {
   font-size: 40px;
   color: #15c2c4;
+}
+@media screen and (max-width: 500px) {
+  .content__box h3 {
+    font-size: 30px;
+  }
 }
 
 .section {
@@ -1873,6 +2032,11 @@ tr td:not(:last-child) {
   display: flex;
   position: relative;
   box-sizing: content-box;
+}
+@media screen and (max-width: 500px) {
+  .section .sider-pro {
+    display: none;
+  }
 }
 .section .sider-pro .sp-slider-container {
   margin: auto !important;
@@ -2448,11 +2612,6 @@ footer {
     text-align: center;
   }
 
-  .IT19 .wrap-box {
-    width: 350px;
-    margin-bottom: 7%;
-  }
-
   .IT19 .wrap-box .content-box {
     justify-content: center;
     align-items: center;
@@ -2465,10 +2624,6 @@ footer {
   .IT19 .wrap-box .content-box .txt h1 {
     font-size: 26px;
     margin-bottom: 10px;
-  }
-
-  .IT19 .wrap-box:last-child {
-    width: 350px;
   }
 
   .row-card {

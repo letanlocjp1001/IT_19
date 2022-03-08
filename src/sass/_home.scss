@@ -356,6 +356,11 @@
     padding: 20px;
     border-radius: 10px;
 
+    @media screen and (max-width: 500px) {
+      width: 400px;
+      margin-bottom: 7%;
+    }
+
     @media screen and (min-width: 501px) and(max-width: 850px) {
       width: 70%;
     }
@@ -364,6 +369,10 @@
     }
     &:last-child {
       width: 960px;
+
+      @media screen and (max-width: 500px) {
+        width: 440px;
+      }
       @media screen and (min-width: 501px) and (max-width: 850px) {
         width: 85%;
       }
