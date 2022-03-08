@@ -15,6 +15,13 @@
   height: 60px;
   max-width: 1240px;
   font-weight: bolder;
+
+  @media screen and (min-width: 501px) and (max-width: 850px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 40px;
+  }
+
   .bg__text {
     display: flex;
     align-items: center;
@@ -41,6 +48,10 @@
     // font-family: $font-display-3;
     text-align: center;
     font-weight: 700;
+
+    @media screen and (min-width: 501px) and(max-width: 850px) {
+      font-size: 1.4rem;
+    }
   }
   &__times {
     grid-column: 3/4;
@@ -52,6 +63,9 @@
     grid-column: 4/12;
     font-size: 1.6rem;
     margin-top: 0.5rem;
+    @media screen and (min-width: 501px) and(max-width: 850px) {
+      font-size: 1.2rem;
+    }
 
     marquee {
       line-height: 1.6rem;
@@ -62,6 +76,9 @@
   }
   &__unit-icon {
     margin-left: 3rem;
+    @media screen and (min-width: 501px) and(max-width: 850px) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -327,8 +344,15 @@
     margin-bottom: 4%;
     padding: 20px;
     border-radius: 10px;
+
+    @media screen and (min-width: 501px) and(max-width: 850px) {
+      width: 70%;
+    }
     &:last-child {
       width: 960px;
+      @media screen and (min-width: 501px) and (max-width: 850px) {
+        width: 85%;
+      }
     }
     .content-box {
       display: flex;
@@ -374,18 +398,24 @@
     justify-content: center;
     padding: 80px;
     border-radius: 10px;
+
+    @media screen and (min-width: 501px) and (max-width: 850px) {
+      width: 90%;
+    }
     .back {
       position: absolute;
       top: 100px;
 
       p {
-        // -webkit-text-stroke: 1px red;
         font-family: $font-display-2;
         font-size: 294px;
         opacity: 0.6;
-        // transform: rotate(-30deg);
         font-weight: bold;
         color: #cbf3f2;
+
+        @media screen and (min-width: 501px) and (max-width: 850px) {
+          font-size: 150px;
+        }
       }
     }
     .front {
@@ -419,12 +449,16 @@
         flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
+        @media screen and (min-width: 501px) and (max-width: 850px) {
+          flex-direction: column;
+        }
         .content-box.feature_1,
         .feature_2,
         .feature_3 {
           position: relative;
           color: black;
           text-align: center;
+          margin-bottom: 2rem;
           span {
             font-family: $font-primary;
             position: absolute;
@@ -434,6 +468,10 @@
             color: #fff;
             font-weight: bold;
             font-size: 117px;
+            @media screen and (min-width: 501px) and (max-width: 850px) {
+              top: -5rem;
+              left: -10rem;
+            }
           }
           img {
             width: auto;
@@ -598,6 +636,9 @@
 #carouselExampleIndicators {
   padding: 40px 0;
   text-align: center;
+  @media screen and (min-width: 501px) and (max-width: 850px) {
+    padding: 4rem 2rem;
+  }
   h1 {
     font-size: 40px;
     font-weight: bold;
@@ -627,6 +668,10 @@
         margin: auto;
         border-radius: 10px;
         box-shadow: 12px 12px 0 $color-primary;
+
+        @media screen and (min-width: 501px) and (max-width: 850px) {
+          width: 90%;
+        }
         .content-txt {
           width: 50%;
           font-size: 12px;
@@ -635,6 +680,10 @@
           color: white;
           text-align: start;
           margin: 100px 40px 0 40px;
+
+          @media screen and (min-width: 501px) and (max-width: 850px) {
+            margin: 20px;
+          }
           h3 {
             font-size: 37px;
             color: #000;
@@ -687,12 +736,20 @@
     border-radius: 50%;
     border: 2px $color-black solid;
     opacity: 1;
+    @media screen and (min-width: 501px) and (max-width: 850px) {
+      left: 5%;
+    }
     i {
       position: absolute;
       left: 14px;
       font-size: 30px;
       text-align: center;
       color: $color-primary;
+
+      @media screen and (max-width: 500px) {
+        left: 7px;
+        font-size: 24px;
+      }
     }
   }
   .carousel-control-next {
@@ -705,11 +762,19 @@
     border-radius: 50%;
     border: 2px $color-black solid;
     opacity: 1;
+    @media screen and (min-width: 501px) and (max-width: 850px) {
+      right: 5%;
+    }
     i {
       position: absolute;
       right: 14px;
       font-size: 30px;
       color: $color-primary;
+
+      @media screen and (max-width: 500px) {
+        right: 7px;
+        font-size: 24px;
+      }
     }
   }
 }
@@ -767,9 +832,10 @@
   .wrap-news {
     margin-bottom: 66px;
     width: 100%;
+    @media screen and (min-width: 501px) and (max-width: 850px) {
+      padding: 2rem;
+    }
     .newsWrapback {
-      display: flex;
-      // margin-top: 5%;
       .container-news {
         margin: 0 auto;
         margin-top: 30px;
@@ -777,6 +843,11 @@
         display: flex;
         justify-content: space-around;
         text-align: start;
+
+        @media screen and (max-width: 500px) {
+          margin-left: 1rem;
+          margin-right: 1rem;
+        }
         .news-img {
           margin: 0 30px 30px 0;
         }

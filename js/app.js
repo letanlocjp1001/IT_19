@@ -4,13 +4,12 @@ window.addEventListener('scroll', () => {
 })
 
 // ********** FIXED NAVBAR ************
-$(document).ready(function () {
-  $('#menu-bar').click(function () {
-    $('#menu-bar').toggleClass('fa-times')
-    $('.menu').toggleClass('menu-toggle')
-  })
-  $(window).on('scroll load', function () {
-    $('#menu-bar').removeClass('fa-times')
-    $('.menu').removeClass('menu-toggle')
-  })
-})
+
+function myFunction() {
+  var x = document.getElementById('myLinks')
+  if (x.style.display === 'block') {
+    x.style.display = 'none'
+  } else {
+    x.style.display = 'block'
+  }
+}

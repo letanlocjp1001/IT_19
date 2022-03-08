@@ -1,4 +1,4 @@
-@media (max-width: 375px) {
+@media screen and (max-width: 500px) {
   // HOME.//
   .wrapper {
     height: 47vh;
@@ -37,18 +37,15 @@
   }
   .bg__news {
     grid-column: 1/4;
-    font-size: 1.2rem;
-    padding-top: 0.5rem;
+    font-size: 1rem !important;
   }
   .bg__times {
     grid-column: 4/5;
     font-size: 1rem;
-    padding-top: 0.5rem;
   }
   .bg__text {
     grid-column: 5/12;
     font-size: 1rem;
-    padding-top: 0.5rem;
   }
   .bg__unit-icon {
     width: 1.6rem;
@@ -138,7 +135,7 @@
     opacity: 0.6;
   }
   .container-feature .box-feature {
-    width: 325px;
+    width: 355px;
   }
   .container-feature .box-feature .front .content-h3 h3 {
     font-size: 30px;
@@ -193,10 +190,12 @@
     padding: 4rem 1rem;
   }
   .section-bottom .section-bottom-txt h3 {
-    font-size: 30px;
+    font-size: 24px;
+    padding: 4rem;
   }
   .section-bottom .section-bottom-txt p {
     font-size: 12px;
+    padding-bottom: 3rem;
   }
   .btn {
     width: 36rem !important;
@@ -208,6 +207,11 @@
   }
   .btn__arrow img {
     top: 18% !important;
+  }
+
+  .section-two {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .section-two .content-txt h3 {
@@ -263,16 +267,20 @@
   }
   #carouselExampleIndicators .carousel-control-next {
     right: -2rem;
+    width: 30px;
+    height: 30px;
   }
   #carouselExampleIndicators .carousel-control-prev {
     left: -2rem;
+    width: 30px;
+    height: 30px;
   }
   .text-none {
     display: none;
   }
   .container-three {
     flex-direction: column;
-    padding: 0;
+    padding: 2rem;
   }
   .container-three .border-box {
     width: 325px;
@@ -412,25 +420,5 @@
         }
       }
     }
-  }
-  .container-feature .box-feature .back p {
-    font-size: 80px;
-  }
-  .bg {
-    margin: 1rem;
-    border: 1px solid #000;
-    font-weight: 400;
-  }
-  .container-feature
-    .box-feature
-    .front
-    .wrap-box-feature
-    .content-box.feature_1
-    span,
-  .container-feature .box-feature .front .wrap-box-feature .feature_2 span,
-  .container-feature .box-feature .front .wrap-box-feature .feature_3 span {
-    top: -50px;
-    left: -80px;
-    font-size: 90px;
   }
 }
