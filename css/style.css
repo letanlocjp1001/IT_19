@@ -50,11 +50,24 @@ li {
   transition: all 0.4s linear;
   z-index: 10000;
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .header__sidebar {
+    padding: 1rem 2rem;
+  }
+}
 .header__nav {
   justify-content: space-around;
   list-style: none;
   display: flex;
   grid-column: 5/-1;
+  gap: 1rem;
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .header__nav {
+    gap: 1rem;
+    grid-template-columns: repeat(8, 1fr);
+    padding: 1rem 2rem;
+  }
 }
 .header__item {
   padding: 1rem 0;
@@ -85,6 +98,11 @@ li {
   text-align: center;
   transition: all 0.2s;
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .header__link:link, .header__link:visited {
+    font-size: 1.3rem;
+  }
+}
 .header__link-1:link, .header__link-1:visited {
   display: block;
   text-decoration: none;
@@ -93,6 +111,11 @@ li {
   font-weight: 700;
   text-align: center;
   transition: all 0.2s;
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .header__link-1:link, .header__link-1:visited {
+    font-size: 1.3rem;
+  }
 }
 .header__item-1 {
   border: 2px solid #000;
@@ -303,6 +326,12 @@ li {
     height: 40px;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .bg {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 .bg .bg__text {
   display: flex;
   align-items: center;
@@ -334,6 +363,11 @@ li {
     font-size: 1.4rem;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .bg__news {
+    font-size: 2rem;
+  }
+}
 .bg__times {
   grid-column: 3/4;
   font-size: 1.3rem;
@@ -362,6 +396,11 @@ li {
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .bg__unit-icon {
     margin-left: 0;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .bg__unit-icon {
+    margin-left: 1.5rem;
   }
 }
 
@@ -632,10 +671,20 @@ li {
     width: 70%;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .IT19 .wrap-box {
+    width: 70%;
+  }
+}
 .IT19 .wrap-box:last-child {
   width: 960px;
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
+  .IT19 .wrap-box:last-child {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
   .IT19 .wrap-box:last-child {
     width: 85%;
   }
@@ -705,6 +754,11 @@ li {
     font-size: 150px;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .container-feature .box-feature .back p {
+    font-size: 160px;
+  }
+}
 .container-feature .box-feature .front {
   text-align: center;
   width: 100%;
@@ -742,6 +796,11 @@ li {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .container-feature .box-feature .front .wrap-box-feature {
+    flex-direction: column;
+  }
+}
 .container-feature .box-feature .front .wrap-box-feature .content-box.feature_1,
 .container-feature .box-feature .front .wrap-box-feature .feature_2,
 .container-feature .box-feature .front .wrap-box-feature .feature_3 {
@@ -763,6 +822,14 @@ li {
   font-size: 117px;
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
+  .container-feature .box-feature .front .wrap-box-feature .content-box.feature_1 span,
+.container-feature .box-feature .front .wrap-box-feature .feature_2 span,
+.container-feature .box-feature .front .wrap-box-feature .feature_3 span {
+    top: -5rem;
+    left: -10rem;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
   .container-feature .box-feature .front .wrap-box-feature .content-box.feature_1 span,
 .container-feature .box-feature .front .wrap-box-feature .feature_2 span,
 .container-feature .box-feature .front .wrap-box-feature .feature_3 span {
@@ -1043,6 +1110,11 @@ li {
     left: 5%;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  #carouselExampleIndicators .carousel-control-prev {
+    left: 8%;
+  }
+}
 #carouselExampleIndicators .carousel-control-prev i {
   position: absolute;
   left: 14px;
@@ -1070,6 +1142,11 @@ li {
 @media screen and (min-width: 501px) and (max-width: 850px) {
   #carouselExampleIndicators .carousel-control-next {
     right: 5%;
+  }
+}
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  #carouselExampleIndicators .carousel-control-next {
+    right: 8%;
   }
 }
 #carouselExampleIndicators .carousel-control-next i {
@@ -1145,6 +1222,11 @@ li {
     padding: 2rem;
   }
 }
+@media screen and (min-width: 851px) and (max-width: 1023px) {
+  .latest-info .wrap-news {
+    padding: 2rem;
+  }
+}
 .latest-info .wrap-news .newsWrapback .container-news {
   margin: 0 auto;
   margin-top: 30px;
@@ -1183,47 +1265,6 @@ li {
   font-weight: 400;
   font-family: "Noto Sans JP", sans-serif;
   color: #000;
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-}
-.container .back {
-  position: absolute;
-  -webkit-animation: animate 3s infinite;
-          animation: animate 3s infinite;
-  width: 850px;
-}
-.container .back .text {
-  font-family: "elevon", sans-serif;
-  font-size: 150px;
-  opacity: 0.6;
-  font-weight: 700;
-  color: #cbf3f2;
-}
-.container .front {
-  text-align: center;
-  z-index: 999;
-  margin-top: 10%;
-}
-.container .front h1 {
-  font-size: 50px;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #15c2c4;
-  margin-bottom: 5%;
-  font-weight: 700;
-}
-.container .front p {
-  font-size: 18px;
-  font-family: "Noto Sans JP", sans-serif;
-  color: #333;
-  line-height: 2;
 }
 
 .question {
@@ -1284,14 +1325,32 @@ main .container-wrap {
   width: 100%;
   background: #15c2c4;
 }
+@media screen and (max-width: 500px) {
+  main .container-wrap {
+    padding: 1rem;
+  }
+}
 main .container-wrap .container-content {
   text-align: center;
 }
-main .container-wrap .container-content nav {
+main .container-wrap .container-content .nav-2 {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  main .container-wrap .container-content .nav-2 {
+    display: block;
+  }
+}
+main .container-wrap .container-content .nav-1 {
   width: 100%;
   padding: 40px 0;
 }
-main .container-wrap .container-content nav ul {
+@media screen and (max-width: 500px) {
+  main .container-wrap .container-content .nav-1 {
+    display: none;
+  }
+}
+main .container-wrap .container-content .nav-1 ul {
   width: calc(100% - 370px);
   display: flex;
   justify-content: space-around;
@@ -1302,14 +1361,14 @@ main .container-wrap .container-content nav ul {
   border: 2px #000 solid;
   border-radius: 10px;
 }
-main .container-wrap .container-content nav ul li {
+main .container-wrap .container-content .nav-1 ul li {
   list-style: none;
   padding: 0 10px;
 }
-main .container-wrap .container-content nav ul li:not(:last-child)::after {
+main .container-wrap .container-content .nav-1 ul li:not(:last-child)::after {
   content: "";
 }
-main .container-wrap .container-content nav ul li a {
+main .container-wrap .container-content .nav-1 ul li a {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -1320,12 +1379,18 @@ main .container-wrap .container-content h1 {
   font-size: 30px;
   color: #fff;
   font-weight: bold;
-  line-height: 2em;
+  line-height: 2;
   width: 732px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
   padding-top: 50px;
+}
+@media screen and (max-width: 500px) {
+  main .container-wrap .container-content h1 {
+    font-size: 18px;
+    width: 400px;
+  }
 }
 main .container-wrap .container-content p {
   font-size: 16px;
@@ -1335,7 +1400,14 @@ main .container-wrap .container-content p {
   font-weight: 400;
   margin: 0 auto;
   text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  main .container-wrap .container-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 400px;
+  }
 }
 main .section {
   width: 100%;
@@ -1351,15 +1423,32 @@ main .section .container-section h1 {
   color: #15c2c4;
   margin: 5rem 0 9rem 0;
 }
+@media screen and (max-width: 500px) {
+  main .section .container-section h1 {
+    font-size: 30px;
+  }
+}
 main .section .container-section p {
   font-size: 27px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  main .section .container-section p {
+    font-size: 18px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }
 main .section .container-box {
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  main .section .container-box {
+    flex-direction: column;
+  }
 }
 main .section .container-box .border-box {
   display: flex;
@@ -1370,6 +1459,12 @@ main .section .container-box .border-box {
   border: 1rem solid #15c2c4;
   border-radius: 100%;
 }
+@media screen and (max-width: 500px) {
+  main .section .container-box .border-box {
+    margin-bottom: 5rem;
+    position: relative;
+  }
+}
 main .section .container-box .border-box span {
   font-size: 117px;
   font-weight: bold;
@@ -1377,6 +1472,11 @@ main .section .container-box .border-box span {
   color: #fff;
   position: absolute;
   top: -100px;
+}
+@media screen and (max-width: 500px) {
+  main .section .container-box .border-box span {
+    left: -5rem;
+  }
 }
 main .section .container-box .border-box p {
   font-size: 22px;
@@ -1387,10 +1487,19 @@ main .section .container-box .border-box p {
 }
 main .section .container-content {
   position: relative;
-  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 2% 0;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  main .section .container-content {
+    flex-direction: column;
+    margin: 2rem;
+  }
+  main .section .container-content img {
+    width: 90%;
+    margin-bottom: 6rem;
+  }
 }
 main .section .container-content .container-content-wrap {
   margin: 0 50px;
@@ -1418,6 +1527,14 @@ main .section .container-content span {
 main .section .container-content span:nth-child(odd) {
   left: -18rem;
 }
+@media screen and (max-width: 500px) {
+  main .section .container-content span {
+    top: 25rem;
+    left: -10px;
+    margin-left: 0;
+    font-size: 90px;
+  }
+}
 main .section .container-content p {
   font-size: 16px;
   font-weight: 400;
@@ -1425,6 +1542,11 @@ main .section .container-content p {
   margin-left: 6%;
   letter-spacing: 3px;
   text-align: start;
+}
+@media screen and (max-width: 500px) {
+  main .section .container-content p {
+    font-size: 14px;
+  }
 }
 main .section .container-content p.txt {
   margin-left: 0;
@@ -1444,12 +1566,22 @@ main .container-content-box .content-box {
   align-items: center;
   margin: 3% auto;
 }
+@media screen and (max-width: 500px) {
+  main .container-content-box .content-box {
+    flex-direction: column;
+  }
+}
 main .container-content-box .content-box .box-wrap {
   padding: 2%;
   width: 260px;
   background-color: #fff;
   border-radius: 10px;
   transition: all 0.3s;
+}
+@media screen and (max-width: 500px) {
+  main .container-content-box .content-box .box-wrap {
+    margin-bottom: 3rem;
+  }
 }
 main .container-content-box .content-box .box-wrap h3 {
   width: 113px;
@@ -1486,6 +1618,57 @@ main .container-content-box .content-box .box-wrap:hover {
   height: 70px;
   border: 70px solid red;
   border-bottom-color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+.container .back {
+  position: absolute;
+  -webkit-animation: animate 3s infinite;
+          animation: animate 3s infinite;
+  width: 850px;
+}
+.container .back .text {
+  font-family: "elevon", sans-serif;
+  font-size: 150px;
+  opacity: 0.6;
+  font-weight: 700;
+  color: #cbf3f2;
+}
+.container .front {
+  text-align: center;
+  z-index: 999;
+  margin-top: 10%;
+}
+.container .front h1 {
+  font-size: 50px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #15c2c4;
+  margin-bottom: 5%;
+  font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  .container .front h1 {
+    font-size: 40px;
+  }
+}
+.container .front p {
+  font-size: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #333;
+  line-height: 2;
+}
+@media screen and (max-width: 500px) {
+  .container .front p {
+    font-size: 14px;
+  }
 }
 
 .service {

@@ -30,19 +30,27 @@ body
     main 
         .container-wrap 
             .container-content 
-                nav 
+                .nav-1 
                     ul 
                         li 
                             a(href="") IT19について
                         span.lm-separator |
                         li 
-                            a(href="") 強み
+                            a(href="") 特徴
+                        span.lm-separator |
+                        li 
+                            a(href="") 料金形態
                         span.lm-separator |
                         li 
                             a(href="") 講師紹介
-                        span.lm-separator |
-                        li 
-                            a(href="") 生徒の声
+                .nav-2 
+                    select.form-select(aria-label="Default select example")
+                        option(selected) IT19について
+                        option(value="1") 特徴
+                        option(value="2") 料金形態
+                        option(value="3") 講師紹介
+                        option(value="4") 生徒の声
+
                 h1  この文章はダミーです。文字の大きさ、量、字間、<br>
                     |行間等を確認するために入れています。
                     
@@ -55,6 +63,7 @@ body
                     |吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で<br>
                     |一番獰悪な種族であったそうだ。この書生というのは時々<br>
                     |吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。
+                img(src="img/it19mac.png", alt="")
         section.section
             .container-section.wow.animate__fadeInUp 
                 h1 IT19の特長

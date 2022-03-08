@@ -22,6 +22,11 @@
     height: 40px;
   }
 
+  @media screen and (min-width: 851px) and (max-width: 1023px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .bg__text {
     display: flex;
     align-items: center;
@@ -52,6 +57,9 @@
     @media screen and (min-width: 501px) and(max-width: 850px) {
       font-size: 1.4rem;
     }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      font-size: 2rem;
+    }
   }
   &__times {
     grid-column: 3/4;
@@ -78,6 +86,9 @@
     margin-left: 3rem;
     @media screen and (min-width: 501px) and(max-width: 850px) {
       margin-left: 0;
+    }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      margin-left: 1.5rem;
     }
   }
 }
@@ -348,9 +359,15 @@
     @media screen and (min-width: 501px) and(max-width: 850px) {
       width: 70%;
     }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      width: 70%;
+    }
     &:last-child {
       width: 960px;
       @media screen and (min-width: 501px) and (max-width: 850px) {
+        width: 85%;
+      }
+      @media screen and (min-width: 851px) and (max-width: 1023px) {
         width: 85%;
       }
     }
@@ -416,6 +433,9 @@
         @media screen and (min-width: 501px) and (max-width: 850px) {
           font-size: 150px;
         }
+        @media screen and (min-width: 851px) and (max-width: 1023px) {
+          font-size: 160px;
+        }
       }
     }
     .front {
@@ -452,6 +472,9 @@
         @media screen and (min-width: 501px) and (max-width: 850px) {
           flex-direction: column;
         }
+        @media screen and (min-width: 851px) and (max-width: 1023px) {
+          flex-direction: column;
+        }
         .content-box.feature_1,
         .feature_2,
         .feature_3 {
@@ -469,6 +492,10 @@
             font-weight: bold;
             font-size: 117px;
             @media screen and (min-width: 501px) and (max-width: 850px) {
+              top: -5rem;
+              left: -10rem;
+            }
+            @media screen and (min-width: 851px) and (max-width: 1023px) {
               top: -5rem;
               left: -10rem;
             }
@@ -739,6 +766,9 @@
     @media screen and (min-width: 501px) and (max-width: 850px) {
       left: 5%;
     }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      left: 8%;
+    }
     i {
       position: absolute;
       left: 14px;
@@ -764,6 +794,9 @@
     opacity: 1;
     @media screen and (min-width: 501px) and (max-width: 850px) {
       right: 5%;
+    }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      right: 8%;
     }
     i {
       position: absolute;
@@ -833,6 +866,9 @@
     margin-bottom: 66px;
     width: 100%;
     @media screen and (min-width: 501px) and (max-width: 850px) {
+      padding: 2rem;
+    }
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
       padding: 2rem;
     }
     .newsWrapback {

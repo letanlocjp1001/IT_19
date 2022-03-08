@@ -3,11 +3,23 @@ main {
   .container-wrap {
     width: 100%;
     background: $color-primary;
+    @media screen and (max-width: 500px) {
+      padding: 1rem;
+    }
     .container-content {
       text-align: center;
-      nav {
+      .nav-2 {
+        display: none;
+        @media screen and (max-width: 500px) {
+          display: block;
+        }
+      }
+      .nav-1 {
         width: 100%;
         padding: 40px 0;
+        @media screen and (max-width: 500px) {
+          display: none;
+        }
         ul {
           width: calc(100% - 370px);
           display: flex;
@@ -40,12 +52,16 @@ main {
         font-size: 30px;
         color: $color-white;
         font-weight: bold;
-        line-height: 2em;
+        line-height: 2;
         width: 732px;
         margin: 0 auto;
         text-align: center;
         margin-bottom: 50px;
         padding-top: 50px;
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+          width: 400px;
+        }
       }
       p {
         font-size: 16px;
@@ -55,7 +71,12 @@ main {
         font-weight: 400;
         margin: 0 auto;
         text-align: center;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
+        @media screen and (max-width: 500px) {
+          font-size: 14px;
+          line-height: 1.6;
+          width: 400px;
+        }
       }
     }
   }
@@ -71,10 +92,19 @@ main {
         font-weight: bold;
         color: $color-primary;
         margin: 5rem 0 9rem 0;
+
+        @media screen and (max-width: 500px) {
+          font-size: 30px;
+        }
       }
       p {
         font-size: 27px;
         font-weight: bold;
+        @media screen and (max-width: 500px) {
+          font-size: 18px;
+          margin-left: 3rem;
+          margin-right: 3rem;
+        }
       }
     }
     .container-box {
@@ -82,6 +112,9 @@ main {
       justify-content: space-around;
       align-items: center;
       position: relative;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
 
       .border-box {
         display: flex;
@@ -91,6 +124,10 @@ main {
         height: 318px;
         border: 1rem solid $color-primary;
         border-radius: 100%;
+        @media screen and (max-width: 500px) {
+          margin-bottom: 5rem;
+          position: relative;
+        }
         span {
           font-size: 117px;
           font-weight: bold;
@@ -99,6 +136,9 @@ main {
           position: absolute;
           top: -100px;
           // left: 0;
+          @media screen and (max-width: 500px) {
+            left: -5rem;
+          }
         }
         p {
           font-size: 22px;
@@ -111,10 +151,18 @@ main {
     }
     .container-content {
       position: relative;
-      width: 100%;
       display: flex;
       justify-content: center;
-      margin: 2% 0;
+      align-items: center;
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 2rem;
+        img {
+          width: 90%;
+          margin-bottom: 6rem;
+        }
+      }
+
       .container-content-wrap {
         margin: 0 50px;
         .container-content-img {
@@ -145,6 +193,12 @@ main {
           // margin-right: 17%;
           left: -18rem;
         }
+        @media screen and (max-width: 500px) {
+          top: 25rem;
+          left: -10px;
+          margin-left: 0;
+          font-size: 90px;
+        }
       }
       p {
         font-size: 16px;
@@ -153,6 +207,9 @@ main {
         margin-left: 6%;
         letter-spacing: 3px;
         text-align: start;
+        @media screen and (max-width: 500px) {
+          font-size: 14px;
+        }
         &.txt {
           margin-left: 0;
           margin-right: 6%;
@@ -172,12 +229,20 @@ main {
       justify-content: space-around;
       align-items: center;
       margin: 3% auto;
+
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
+      }
       .box-wrap {
         padding: 2%;
         width: 260px;
         background-color: $color-white;
         border-radius: 10px;
         transition: all 0.3s;
+
+        @media screen and (max-width: 500px) {
+          margin-bottom: 3rem;
+        }
         h3 {
           width: 113px;
           font-size: 16px;
@@ -218,5 +283,52 @@ main {
     height: 70px;
     border: 70px solid red;
     border-bottom-color: transparentize($color: black, $amount: -0);
+  }
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  .back {
+    position: absolute;
+    animation: animate 3s infinite;
+    width: 850px;
+    .text {
+      font-family: $font-display-2;
+      font-size: 150px;
+      opacity: 0.6;
+      font-weight: 700;
+      color: #cbf3f2;
+    }
+  }
+  .front {
+    text-align: center;
+    z-index: 999;
+    margin-top: 10%;
+    h1 {
+      font-size: 50px;
+      font-family: $font-primary;
+      color: $color-primary;
+      margin-bottom: 5%;
+      font-weight: 700;
+
+      @media screen and (max-width: 500px) {
+        font-size: 40px;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-family: $font-primary;
+      color: #333;
+      line-height: 2;
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+      }
+    }
   }
 }

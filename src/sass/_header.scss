@@ -11,12 +11,21 @@
     grid-template-columns: repeat(12, 1fr);
     transition: all 0.4s linear;
     z-index: 10000;
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      padding: 1rem 2rem;
+    }
   }
   &__nav {
     justify-content: space-around;
     list-style: none;
     display: flex;
     grid-column: 5/-1;
+    gap: 1rem;
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      gap: 1rem;
+      grid-template-columns: repeat(8, 1fr);
+      padding: 1rem 2rem;
+    }
   }
 
   &__item {
@@ -51,6 +60,9 @@
     font-weight: 700;
     text-align: center;
     transition: all 0.2s;
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      font-size: 1.3rem;
+    }
   }
   &__link-1:link,
   &__link-1:visited {
@@ -61,6 +73,9 @@
     font-weight: 700;
     text-align: center;
     transition: all 0.2s;
+    @media screen and (min-width: 851px) and (max-width: 1023px) {
+      font-size: 1.3rem;
+    }
   }
   &__item-1 {
     border: 2px solid #000;
