@@ -190,11 +190,10 @@ main {
         margin-left: 17%;
         z-index: -1;
         &:nth-child(odd) {
-          // margin-right: 17%;
-          left: -18rem;
+          top: -80px;
         }
         @media screen and (max-width: 500px) {
-          top: 25rem;
+          top: 17rem;
           left: -10px;
           margin-left: 0;
           font-size: 90px;
@@ -336,5 +335,47 @@ main {
         font-size: 14px;
       }
     }
+  }
+}
+
+.nav-2 {
+  width: 100%;
+  background: #fff;
+}
+.btn-dropdown {
+  text-decoration: none;
+  color: $color-primary;
+  background-color: #fff;
+  font-size: 20px;
+}
+.dropdown-menu {
+  width: 80%;
+  padding: 0;
+  li {
+    font-size: 20px;
+  }
+}
+
+.container__section {
+  h1 {
+    color: $color-primary;
+    font-weight: 700;
+    font-size: 40px;
+  }
+  p {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+}
+
+.container__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+  flex-wrap: wrap;
+
+  &-img {
+    padding: 2rem;
   }
 }
