@@ -2092,6 +2092,50 @@ tr td:not(:last-child) {
   background-color: #fdfaf6 !important;
 }
 
+.slider__mobile {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .slider__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+  }
+}
+.slider__group {
+  background: #fff;
+  padding: 1rem;
+  width: 285px;
+  height: 244px;
+  border-radius: 10px;
+  position: relative;
+  top: -20px;
+  left: 30px;
+}
+.slider__num {
+  font-size: 4rem;
+  font-weight: 900;
+  opacity: 0.1;
+  line-height: 1;
+  padding-bottom: 10px;
+}
+.slider__text h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.slider__text h5 {
+  padding: 1rem 0;
+  font-size: 1.4rem;
+}
+.slider__text p {
+  font-weight: medium;
+}
+.slider__line {
+  border-top: 2px dashed #fceb3b;
+}
+
 .news {
   display: flex;
   justify-content: space-between;
