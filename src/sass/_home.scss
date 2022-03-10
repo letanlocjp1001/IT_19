@@ -210,27 +210,27 @@
 }
 .btn {
   position: relative;
-  width: 36rem !important;
-  height: 6rem !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border: none !important;
-  background-color: $color-secondary !important;
-  border-radius: 3rem !important;
-  padding: 1rem !important;
-  margin: auto !important;
-  transition: all 0.2s linear !important;
-  font-size: 1.8rem !important;
-  font-weight: bold !important;
-  border: 2px solid black !important;
+  width: 36rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: $color-secondary;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: auto;
+  transition: all 0.2s linear;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid black;
   &__arrow img {
-    position: absolute !important;
-    top: 28% !important;
-    right: 10% !important;
+    position: absolute;
+    top: 28%;
+    right: 10%;
   }
   a {
-    text-decoration: none !important;
+    text-decoration: none;
   }
 }
 .btn:hover {

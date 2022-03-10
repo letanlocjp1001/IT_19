@@ -524,28 +524,28 @@ li {
 
 .btn {
   position: relative;
-  width: 36rem !important;
-  height: 6rem !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  border: none !important;
-  background-color: #fceb3b !important;
-  border-radius: 3rem !important;
-  padding: 1rem !important;
-  margin: auto !important;
-  transition: all 0.2s linear !important;
-  font-size: 1.8rem !important;
-  font-weight: bold !important;
-  border: 2px solid black !important;
+  width: 36rem;
+  height: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fceb3b;
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: auto;
+  transition: all 0.2s linear;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 2px solid black;
 }
 .btn__arrow img {
-  position: absolute !important;
-  top: 28% !important;
-  right: 10% !important;
+  position: absolute;
+  top: 28%;
+  right: 10%;
 }
 .btn a {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -1653,7 +1653,7 @@ main .container-content-box .content-box .box-wrap:hover {
 }
 @media screen and (max-width: 500px) {
   .container .back {
-    width: 500px;
+    width: 100%;
   }
 }
 .container .back .text {
@@ -1662,6 +1662,11 @@ main .container-content-box .content-box .box-wrap:hover {
   opacity: 0.6;
   font-weight: 700;
   color: #cbf3f2;
+}
+@media screen and (max-width: 500px) {
+  .container .back .text {
+    font-size: 100px;
+  }
 }
 .container .front {
   text-align: center;
@@ -2141,6 +2146,12 @@ tr td:not(:last-child) {
   justify-content: space-between;
   padding: 4rem 20rem;
 }
+@media screen and (max-width: 500px) {
+  .news {
+    overflow-x: hidden;
+    padding: 2rem;
+  }
+}
 .news__boxs {
   display: flex;
   align-items: center;
@@ -2160,8 +2171,23 @@ tr td:not(:last-child) {
   align-items: flex-start;
   padding: 7rem 3rem;
 }
+@media screen and (max-width: 500px) {
+  .news__box {
+    width: 327px;
+    height: 390px;
+    flex-direction: column;
+  }
+}
 .news__img {
   margin-right: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .news__img {
+    margin-right: 0;
+  }
+  .news__img img {
+    width: 60px;
+  }
 }
 .news__title {
   display: flex;
@@ -2169,11 +2195,38 @@ tr td:not(:last-child) {
   font-size: 1.5rem;
   font-weight: bold;
 }
+@media screen and (max-width: 500px) {
+  .news__title {
+    justify-content: flex-start;
+    position: relative;
+    top: -36px;
+    left: 80px;
+    align-items: center;
+  }
+}
 .news__title p {
   background-color: #15c2c4;
   color: #fff;
   padding: 4px 5rem;
   border-radius: 5px;
+}
+@media screen and (max-width: 500px) {
+  .news__title p {
+    padding: 3px 5px;
+    margin-right: 7rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news__title span {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news__detail {
+    position: relative;
+    top: -20px;
+  }
 }
 .news__detail h2 {
   font-weight: bold;
@@ -2191,6 +2244,11 @@ tr td:not(:last-child) {
   text-align: center;
   letter-spacing: 2px;
   box-shadow: 6px 6px 10px 6px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 500px) {
+  .category {
+    display: none;
+  }
 }
 .category__box {
   padding: 2rem 8rem;
@@ -2238,6 +2296,12 @@ tr td:not(:last-child) {
   text-align: center;
   background: #15c2c4;
 }
+@media screen and (max-width: 500px) {
+  .exchange {
+    text-align: center;
+    padding: 14rem 2rem;
+  }
+}
 .exchange__text {
   margin-bottom: 5rem;
 }
@@ -2247,10 +2311,20 @@ tr td:not(:last-child) {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .exchange h3 {
+    font-size: 20px;
+  }
+}
 .exchange p {
   font-size: 16px;
   color: #fff;
   font-weight: 500;
+}
+@media screen and (max-width: 500px) {
+  .exchange p {
+    font-size: 12px;
+  }
 }
 
 main nav {
@@ -2265,6 +2339,12 @@ main nav ul {
   align-items: center;
   border: 2px #000 solid;
   border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  main nav ul {
+    width: 90%;
+    overflow-x: hidden;
+  }
 }
 main nav ul li {
   list-style: none;
@@ -2291,6 +2371,12 @@ main .wrapper-box .wrapper-flex {
   text-align: center;
   padding-top: 4%;
 }
+@media screen and (max-width: 500px) {
+  main .wrapper-box .wrapper-flex {
+    flex-direction: column;
+    padding-top: 6rem;
+  }
+}
 main .wrapper-box .wrapper-flex .border-box {
   max-width: 356px;
   height: 190px;
@@ -2299,8 +2385,18 @@ main .wrapper-box .wrapper-flex .border-box {
   border-radius: 10px;
   padding: 10px;
 }
+@media screen and (max-width: 500px) {
+  main .wrapper-box .wrapper-flex .border-box {
+    margin-bottom: 6rem;
+  }
+}
 main .wrapper-box .wrapper-flex .border-box.center {
   margin: 0 1%;
+}
+@media screen and (max-width: 500px) {
+  main .wrapper-box .wrapper-flex .border-box.center {
+    margin-bottom: 6rem;
+  }
 }
 main .wrapper-box .wrapper-flex .border-box .content-box {
   position: relative;
@@ -2326,15 +2422,32 @@ main .bg-section {
   background: #15c2c4;
   text-align: center;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section {
+    padding: 2rem;
+  }
+}
 main .bg-section h1 {
   font-size: 40px;
   font-weight: bold;
   color: #fff;
   display: grid;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section h1 {
+    font-size: 30px;
+  }
+}
 main .bg-section h1 i {
   padding: 2% 0;
   letter-spacing: 24px;
+}
+@media screen and (max-width: 500px) {
+  main .bg-section h1 i {
+    letter-spacing: 10px;
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
 }
 main .bg-section .wrap {
   position: relative;
@@ -2344,6 +2457,11 @@ main .bg-section .wrap {
   margin: auto;
   text-align: center;
   width: 1100px;
+}
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap {
+    width: 100%;
+  }
 }
 main .bg-section .wrap h2 {
   font-size: 24px;
@@ -2359,6 +2477,12 @@ main .bg-section .wrap .loggedin-div {
   margin: 0px auto;
   margin-top: 150px;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div,
+main .bg-section .wrap .loggedin-div {
+    margin-top: 3rem;
+  }
+}
 main .bg-section .wrap .main-div .flex,
 main .bg-section .wrap .loggedin-div .flex {
   display: flex;
@@ -2366,10 +2490,32 @@ main .bg-section .wrap .loggedin-div .flex {
   align-items: center;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div .flex,
+main .bg-section .wrap .loggedin-div .flex {
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 main .bg-section .wrap .main-div .flex label,
 main .bg-section .wrap .loggedin-div .flex label {
   font-size: 20px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div .flex label,
+main .bg-section .wrap .loggedin-div .flex label {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div .flex .col,
+main .bg-section .wrap .loggedin-div .flex .col {
+    width: 100%;
+  }
 }
 main .bg-section .wrap .main-div .flex input,
 main .bg-section .wrap .loggedin-div .flex input {
@@ -2382,6 +2528,12 @@ main .bg-section .wrap .loggedin-div .flex input {
   width: 660px;
   font-weight: 700;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div .flex input,
+main .bg-section .wrap .loggedin-div .flex input {
+    width: 100%;
+  }
+}
 main .bg-section .wrap .main-div .flex input:focus,
 main .bg-section .wrap .loggedin-div .flex input:focus {
   border: 1px solid #999;
@@ -2392,6 +2544,12 @@ main .bg-section .wrap .loggedin-div .flex textarea {
   height: 150px;
   padding: 5px 10px;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .main-div .flex textarea,
+main .bg-section .wrap .loggedin-div .flex textarea {
+    width: 100%;
+  }
+}
 main .bg-section .wrap .border-box {
   padding: 40px 20px;
   width: 60%;
@@ -2399,9 +2557,20 @@ main .bg-section .wrap .border-box {
   border: 3px #000 solid;
   border-radius: 10px;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .border-box {
+    width: 90%;
+  }
+}
 main .bg-section .wrap .border-box h2 {
   font-size: 24px;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .border-box h2 {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
 }
 main .bg-section .wrap .border-box p {
   font-size: 16px;
@@ -2411,19 +2580,41 @@ main .bg-section .wrap .border-box p {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .border-box p {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+}
 main .bg-section .wrap .form-check {
   margin: 4% 0;
   font-size: 16px;
 }
+@media screen and (max-width: 500px) {
+  main .bg-section .wrap .form-check {
+    font-size: 10px;
+    margin: 10px;
+  }
+}
 main .title {
   margin-top: 15vh;
   margin-bottom: 4rem;
+}
+@media screen and (max-width: 500px) {
+  main .title {
+    margin-top: 3rem;
+  }
 }
 main .title h2 {
   font-size: 40px;
   font-weight: bold;
   text-align: center;
   color: #15c2c4;
+}
+@media screen and (max-width: 500px) {
+  main .title h2 {
+    font-size: 30px;
+  }
 }
 main .question {
   background: #fff;
@@ -2433,6 +2624,11 @@ main .question {
   width: 50%;
   margin: auto;
   margin-bottom: 2em;
+}
+@media screen and (max-width: 500px) {
+  main .question {
+    width: 90%;
+  }
 }
 main .question .question-title {
   display: flex;
@@ -2445,6 +2641,12 @@ main .question .question-title .bg-q {
   padding: 1%;
   width: 120px;
 }
+@media screen and (max-width: 500px) {
+  main .question .question-title .bg-q {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+}
 main .question .question-title .bg-q span {
   display: flex;
   justify-content: center;
@@ -2452,6 +2654,12 @@ main .question .question-title .bg-q span {
   font-size: 40px;
   font-family: "futura-pt", sans-serif;
   color: #fceb3b;
+}
+@media screen and (max-width: 500px) {
+  main .question .question-title .bg-q span {
+    font-size: 20px;
+    padding: 2rem 0;
+  }
 }
 main .question .question-title p {
   font-size: 16px;
@@ -2778,11 +2986,11 @@ ul {
   }
 
   .btn {
-    width: 36rem !important;
-    height: 4rem !important;
-    padding: 1rem !important;
-    margin: auto !important;
-    font-size: 1.6rem !important;
+    width: 34rem;
+    height: 5rem;
+    padding: 1rem;
+    margin: auto;
+    font-size: 1.6rem;
   }
 
   .btn__arrow img {
