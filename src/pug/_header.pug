@@ -1,14 +1,10 @@
 
-header.header
+header.header#myHeader
       .header__sidebar#header__sidebar 
         .header__logo
 
           a(href="index.html") 
             img.header__logo-img(src="img/logo.svg", alt="Logo")
-          a(href="index.html") 
-            img.header__logo-phone(src="img/logophone.svg", alt="Logo")
-        #menu-bar 
-          img(src="img/bar.svg", alt="bar")
         ul.header__nav 
           li.header__item 
             a.header__link(href="it19.html") IT19とは
@@ -22,3 +18,51 @@ header.header
             a.header__link(href="contact.html") お問い合わせ
           li.header__item-1 
             a.header__link-1(href="register.html") 応募してみる
+      
+      //- hamburger menu
+      <div class="mobile__menu">
+          img(src="../img/logophone.svg", alt="")
+          //- <!--Mobile navigation-->
+          <input id="toggle" type="checkbox"/>
+          
+          <label class="hamburger" for="toggle">
+              img(src="../img/bar.svg", alt="")
+          </label>
+          //- <!--Hamburger navigation-->
+          <div class="hamburger__nav">
+              
+              <div class="hamburger__nav--wrapper">
+                  img(src="img/logophone.svg", alt="")
+                  <nav class="hamburger__nav--items">
+                    button.header__item-1 
+                        a.header__link-1(href="register.html") 応募してみる
+                    button.header__item-2 無料相談はこちら
+                      
+                      img(src="img/arrow-left.svg", alt="")
+                    li.header__item  
+                      <a href="#">IT19とは</a>
+                    li.header__item 
+                      <a href="#">できること</a>
+                    li.header__item  
+                      <a href="#">授業方法</a>
+                    li.header__item 
+                      a(href="") 最新情報
+                    li.header__item 
+                      a(href="") お問い合わせ
+
+                    img(src="img/logo.svg", alt="").logo-bottom
+
+                    address 住所  
+
+                    .icon-bottom
+                      img(src="img/twitter.svg", alt="")
+                      img(src="img/facebook.svg", alt="")
+                  </nav>
+                  
+              </div>
+          </div>
+      </div>
+
+script(src="js/app.js") 
+
+

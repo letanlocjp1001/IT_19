@@ -17,10 +17,9 @@
     <script type="text/javascript">new WOW().init();</script>
   </head>
   <body> 
-    <header class="header">
+    <header class="header" id="myHeader">
       <div class="header__sidebar" id="header__sidebar"> 
-        <div class="header__logo"><a href="index.html"> <img class="header__logo-img" src="img/logo.svg" alt="Logo"></a><a href="index.html"> <img class="header__logo-phone" src="img/logophone.svg" alt="Logo"></a></div>
-        <div id="menu-bar"> <img src="img/bar.svg" alt="bar"></div>
+        <div class="header__logo"><a href="index.html"> <img class="header__logo-img" src="img/logo.svg" alt="Logo"></a></div>
         <ul class="header__nav"> 
           <li class="header__item"> <a class="header__link" href="it19.html">IT19とは</a></li>
           <li class="header__item"> <a class="header__link" href="service.html">できること</a></li>
@@ -29,8 +28,27 @@
           <li class="header__item"> <a class="header__link" href="contact.html">お問い合わせ</a></li>
           <li class="header__item-1"> <a class="header__link-1" href="register.html">応募してみる</a></li>
         </ul>
-      </div>
+      </div><div class="mobile__menu"><img src="../img/logophone.svg" alt=""><input id="toggle" type="checkbox"/>
+<label class="hamburger" for="toggle"><img src="../img/bar.svg" alt=""></label>
+<div class="hamburger__nav">
+<div class="hamburger__nav--wrapper"><img src="img/logophone.svg" alt=""><nav class="hamburger__nav--items">
+      <button class="header__item-1"> <a class="header__link-1" href="register.html">応募してみる</a></button>
+      <button class="header__item-2">無料相談はこちら<img src="img/arrow-left.svg" alt=""></button>
+      <li class="header__item">
+         <a href="#">IT19とは</a></li>
+      <li class="header__item">
+         <a href="#">できること</a></li>
+      <li class="header__item">
+         <a href="#">授業方法</a></li>
+      <li class="header__item"> <a href="">最新情報</a></li>
+      <li class="header__item"> <a href="">お問い合わせ</a></li><img class="logo-bottom" src="img/logo.svg" alt="">
+      <address>住所  </address>
+      <div class="icon-bottom"><img src="img/twitter.svg" alt=""><img src="img/facebook.svg" alt=""></div></nav>
+</div>
+</div>
+</div>
     </header>
+    <script src="js/app.js"> </script>
     <div class="container"> 
       <div class="back">
         <marquee class="text" behavior="" direction="">Application</marquee>

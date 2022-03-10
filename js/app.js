@@ -3,13 +3,17 @@ window.addEventListener('scroll', () => {
   header.classList.toggle('header__sticky', window.scrollY > 0)
 })
 
-// ********** FIXED NAVBAR ************
+window.onscroll = function () {
+  myFunction()
+}
+
+var header = document.getElementById('myHeader')
+var sticky = header.offsetTop
 
 function myFunction() {
-  var x = document.getElementById('myLinks')
-  if (x.style.display === 'block') {
-    x.style.display = 'none'
+  if (window.pageYOffset > sticky) {
+    header.classList.add('sticky')
   } else {
-    x.style.display = 'block'
+    header.classList.remove('sticky')
   }
 }

@@ -354,15 +354,5 @@
     &__logo-img {
       display: none;
     }
-    &__logo-phone {
-      display: block;
-    }
-    &__sticky {
-      .header__logo {
-        img {
-          height: 30px;
-        }
-      }
-    }
   }
 }
