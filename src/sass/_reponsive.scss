@@ -246,6 +246,9 @@
     margin-bottom: 0;
     width: 120%;
   }
+  .carousel-item {
+    height: 195px;
+  }
   #carouselExampleIndicators
     .carousel-inner
     .carousel-item
@@ -259,12 +262,12 @@
     margin: 4rem 0 0 0;
   }
   #carouselExampleIndicators .carousel-control-next {
-    right: -2rem;
+    right: 0;
     width: 30px;
     height: 30px;
   }
   #carouselExampleIndicators .carousel-control-prev {
-    left: -2rem;
+    left: 0;
     width: 30px;
     height: 30px;
   }
@@ -324,6 +327,11 @@
     color: black !important;
   }
 }
+@media screen {
+  .slideshow-container {
+    display: none;
+  }
+}
 
 @media (max-width: 850px) {
   #menu-bar {
@@ -338,6 +346,7 @@
     &__sidebar {
       grid-template-columns: repeat(2, 1fr);
       padding: 1rem;
+      display: flex;
     }
     &__nav {
       position: fixed;

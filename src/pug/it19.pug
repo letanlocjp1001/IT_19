@@ -43,18 +43,19 @@ body
                         li 
                             a(href="") 講師紹介
                 .nav-2 
-                    .dropdown
-                        a.btn-dropdown.dropdown-toggle(type="text" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false")
-                            |IT19について
-                        ul(class="dropdown-menu" aria-labelledby="dropdownMenuButton1")
-                            li
-                                a(class="dropdown-item" href="#特徴") 特徴
-                            li
-                                a(class="dropdown-item" href="#") 料金形態
-                            li 
-                                a(class="dropdown-item" href="#")   講師紹介
-                        
-                        
+                    .question
+                        .question-title
+                            .text IT19について
+                            button.question-btn
+                                span.plus-icon
+                                    i.fa.fa-plus
+                                span.minus-icon
+                                    i.fa.fa-close 
+                        .question-text
+                            p 特徴
+                            p 料金形態
+                            p 講師紹介
+                            p 生徒の声
 
                 h1  IT19(あいてぃじゅく)の“塾”
                     
@@ -163,7 +164,7 @@ body
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1").active
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")
-            .carousel-inner
+            .carousel-inner.display_2
                 .carousel-item.active
                     .carousel-item-content
                         .image
@@ -172,6 +173,7 @@ body
                             h1 Sasazaki Nonoka
                             span ささざき ののか
                             h2 笹嵜 希花
+                
                 .carousel-item
                     .carousel-item-content
                         .image
@@ -181,8 +183,6 @@ body
                             span ささざき ののか
                             h2 笹嵜 希花
                             
-
-
                 .carousel-item
                     .carousel-item-content
                         .image
@@ -197,6 +197,42 @@ body
                     i.fa.fa-caret-left
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next").carousel-control-next.next
                     i.fa.fa-caret-right  
+            
+            //- mobile slider
+            .slideshow-container
+                .mySlides
+                    img(src="img/people_2.png", alt="")
+                    .content-txt
+                        h2 Sasazaki Nonoka
+                        span ささざき ののか
+                        h3 笹嵜 希花 1
+                        p   吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                            |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+                
+                .mySlides
+                    img(src="img/people_2.png", alt="")
+                    .content-txt
+                        h2 Sasazaki Nonoka
+                        span ささざき ののか
+                        h3 笹嵜 希花 2
+                        p   吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                            |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+
+                .mySlides
+                    img(src="img/people_2.png", alt="")
+                    .content-txt
+                        h2 Sasazaki Nonoka
+                        span ささざき ののか
+                        h3 笹嵜 希花 3
+                        p   吾輩は猫である。名前はまだ無い。あああどこで生れたかとんと見当がつかぬ。ああ
+                            |何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。ああ
+
+                .carousel-control-prev.prev(onclick="plusSlides(-1, 0)")
+                    i.fa.fa-caret-left
+                .carousel-control-next.next(onclick="plusSlides(1, 0)")
+                    i.fa.fa-caret-right
+            
+            
         
         section.section
             .container-wrap     
@@ -220,5 +256,6 @@ body
                             h3 ためになった！
                             p 吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所です。どこで生れたかとんと見当がつかぬ。
                     
-
+        script(src="js/question.js") 
+        script(src="js/splide.min.js") 
     include _footer

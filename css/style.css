@@ -131,19 +131,12 @@ li {
 
 .mobile__menu {
   display: none;
-  /* To hide hamburger menu from non-mobile website*/
 }
-
-.hamburger {
-  position: absolute;
-  top: 14px;
-  right: 10%;
+.mobile__menu .hamburger {
   z-index: 5;
   cursor: pointer;
-  /* To change the color when hover over it*/
 }
-
-.hamburger div {
+.mobile__menu .hamburger div {
   position: relative;
   width: 35px;
   height: 3px;
@@ -151,36 +144,8 @@ li {
   background-color: #333;
   margin-top: 10px;
   transition: all 0.3s ease-in-out;
-  /* To have nice transition when hover over it*/
 }
-
-#toggle {
-  display: none;
-}
-
-/* Hamburger nav rotating animation*/
-#toggle:checked + .hamburger .hamburger__top {
-  transform: rotate(-45deg);
-  margin-top: 17.5px;
-  /* Half the size of hamburger nav height */
-}
-
-#toggle:checked + .hamburger .hamburger__meat {
-  transform: rotate(45deg);
-  margin-top: -3px;
-  /* Negative value of hamburger nav div height */
-}
-
-#toggle:checked + .hamburger .hamburger__bottom {
-  transform: scale(0);
-  /*Scales hamburger nav down to 0, it`s disapears*/
-}
-
-#toggle:checked + .hamburger + .hamburger__nav {
-  top: 0;
-}
-
-.hamburger__nav {
+.mobile__menu .hamburger__nav {
   position: fixed;
   z-index: 4;
   width: 100%;
@@ -192,27 +157,45 @@ li {
   bottom: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
-  /* To have nice transition when hover over it*/
 }
-
-/*wrapper*/
-.hamburger__nav .hamburger__nav--wrapper {
+.mobile__menu .hamburger__nav .hamburger__nav--wrapper {
   position: relative;
   overflow-y: auto;
   height: 100%;
 }
-
-/* Hamburger item styling*/
-.hamburger__nav--items {
+.mobile__menu .hamburger__nav .hamburger__nav--wrapper nav a {
+  opacity: 1;
+}
+.mobile__menu .hamburger__nav .hamburger__nav--wrapper .hamburger__nav--items {
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+.mobile__menu #toggle {
+  display: none;
+}
+.mobile__menu #toggle:checked + .hamburger .hamburger__top {
+  transform: rotate(-45deg);
+  margin-top: 17.5px;
+  /* Half the size of hamburger nav height */
+}
+.mobile__menu #toggle:checked + .hamburger .hamburger__meat {
+  transform: rotate(45deg);
+  margin-top: -3px;
+  /* Negative value of hamburger nav div height */
+}
+.mobile__menu #toggle:checked + .hamburger .hamburger__bottom {
+  transform: scale(0);
+  /*Scales hamburger nav down to 0, it`s disapears*/
+}
+.mobile__menu #toggle:checked + .hamburger + .hamburger__nav {
+  top: 0;
 }
 
 .hamburger__nav--items a {
-  margin-top: 40px;
   color: #15c2c4;
   opacity: 0;
   text-decoration: none;
@@ -220,16 +203,6 @@ li {
   font-weight: 700;
   letter-spacing: 3px;
   transition: all 0.3s ease 0s;
-  /* To have nice transition when hover over it*/
-}
-
-.hamburger__nav--items a:first-child {
-  margin-top: 0;
-  /* First link margin 0 makes sure that spacing to the top and the botoom is included*/
-}
-
-.hamburger__nav--wrapper nav a {
-  opacity: 1;
 }
 
 #menu-bar,
@@ -240,24 +213,18 @@ li {
 @media screen and (max-width: 850px) {
   .mobile__menu {
     display: flex;
-    padding: 2rem 3rem;
-    z-index: 1000000;
+    justify-content: space-between;
+    z-index: 9999;
+    align-items: center;
+    width: 100%;
+  }
+  .mobile__menu a {
+    z-index: 5;
   }
 
   .nav__links,
 .med__button {
     display: none;
-  }
-
-  .hamburger__nav--items {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 428px;
-    position: fixed;
   }
 
   .header__link-1 {
@@ -275,12 +242,23 @@ li {
     border-radius: 5rem;
     color: #000;
     width: 30rem;
-    height: 4.6rem;
     font-weight: 700;
     font-size: 1.6rem;
     cursor: pointer;
     transition: all 0.2s;
     margin: 14px 0;
+    position: relative;
+  }
+  .header__item-2 i {
+    position: absolute;
+    right: 15%;
+    bottom: 13px;
+  }
+  .header__item-2:hover {
+    transform: translateY(-5px);
+  }
+  .header__item-2 a {
+    color: #000;
   }
 
   .logo-bottom {
@@ -290,6 +268,19 @@ li {
 
   address {
     color: #15c2c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 24px 0;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+  }
+  address .address_1 {
+    margin-right: 10%;
+  }
+  address .address_2 {
+    text-align: start;
   }
 
   .icon-bottom img {
@@ -768,7 +759,7 @@ li {
 .container-feature .box-feature .front {
   text-align: center;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
 }
 .container-feature .box-feature .front .content-h3 {
   margin-bottom: 15%;
@@ -890,6 +881,7 @@ li {
 }
 .section-two .content-txt {
   margin: 2% 0;
+  padding: 0 2rem;
 }
 .section-two .content-txt h3 {
   font-size: 37px;
@@ -1113,6 +1105,7 @@ li {
 #carouselExampleIndicators .carousel-control-prev {
   position: absolute;
   left: 20%;
+  top: 10%;
   margin: auto;
   width: 46px;
   height: 46px;
@@ -1140,13 +1133,13 @@ li {
 }
 @media screen and (max-width: 500px) {
   #carouselExampleIndicators .carousel-control-prev i {
-    left: 7px;
-    font-size: 24px;
+    left: 9px;
   }
 }
 #carouselExampleIndicators .carousel-control-next {
   position: absolute;
   right: 20%;
+  top: 10%;
   margin: auto;
   width: 46px;
   height: 46px;
@@ -1173,8 +1166,7 @@ li {
 }
 @media screen and (max-width: 500px) {
   #carouselExampleIndicators .carousel-control-next i {
-    right: 7px;
-    font-size: 24px;
+    right: 9px;
   }
 }
 
@@ -1339,6 +1331,8 @@ li {
 
 main {
   overflow-x: hidden;
+  /* Slideshow container */
+  /* Position the "next button" to the right */
 }
 main .container-wrap {
   width: 100%;
@@ -1354,11 +1348,66 @@ main .container-wrap .container-content {
 }
 main .container-wrap .container-content .nav-2 {
   display: none;
+  /* hide text */
 }
 @media screen and (max-width: 500px) {
   main .container-wrap .container-content .nav-2 {
     display: block;
   }
+}
+main .container-wrap .container-content .nav-2 .question {
+  background: #fff;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid #000;
+}
+main .container-wrap .container-content .nav-2 .question-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 14px 0;
+}
+main .container-wrap .container-content .nav-2 .question-title .text {
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  color: #15c2c4;
+  font-size: 14px;
+  font-weight: bold;
+}
+main .container-wrap .container-content .nav-2 .question-btn {
+  transition: all 0.2s;
+  position: absolute;
+  right: 10%;
+}
+main .container-wrap .container-content .nav-2 .question-btn i {
+  font-size: 14px;
+  color: #000;
+}
+main .container-wrap .container-content .nav-2 .question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+main .container-wrap .container-content .nav-2 .question-text p {
+  margin-bottom: 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+main .container-wrap .container-content .nav-2 .question-text {
+  display: none;
+}
+main .container-wrap .container-content .nav-2 .show-text .question-text {
+  display: block;
+}
+main .container-wrap .container-content .nav-2 .minus-icon {
+  display: none;
+}
+main .container-wrap .container-content .nav-2 .show-text .minus-icon {
+  display: inline;
+}
+main .container-wrap .container-content .nav-2 .show-text .plus-icon {
+  display: none;
 }
 main .container-wrap .container-content .nav-1 {
   width: 100%;
@@ -1419,7 +1468,6 @@ main .container-wrap .container-content p {
   font-weight: 400;
   margin: 2rem 16rem;
   text-align: center;
-  padding-bottom: 50px;
 }
 @media screen and (max-width: 500px) {
   main .container-wrap .container-content p {
@@ -1618,6 +1666,79 @@ main .container-content-box .content-box .box-wrap p {
 main .container-content-box .content-box .box-wrap:hover {
   transform: translateY(-40px);
 }
+@media (max-width: 500px) {
+  main .display_1 {
+    display: block;
+  }
+  main .display_2 {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  main .slideshow-container {
+    display: block;
+  }
+  main .slideshow-container .mySlides {
+    text-align: center;
+  }
+  main .slideshow-container .mySlides .content-txt {
+    text-align: start;
+  }
+  main .slideshow-container .mySlides .content-txt h2 {
+    font-size: 30px;
+    font-weight: lighter;
+    color: #e8f9f9;
+    letter-spacing: 3px;
+  }
+  main .slideshow-container .mySlides .content-txt span {
+    font-size: 13px;
+    font-weight: bold;
+  }
+  main .slideshow-container .mySlides .content-txt h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  main .slideshow-container .mySlides .content-txt p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    padding: 10px 0;
+  }
+}
+main .mySlides {
+  display: none;
+}
+main img {
+  vertical-align: middle;
+}
+main .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  padding: 0 55px;
+}
+main .prev,
+main .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+main .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
 .cool {
   position: absolute;
@@ -1672,7 +1793,7 @@ main .container-content-box .content-box .box-wrap:hover {
 }
 .container .front {
   text-align: center;
-  z-index: 999;
+  z-index: 2;
   margin-top: 10%;
 }
 .container .front h1 {
@@ -1697,11 +1818,6 @@ main .container-content-box .content-box .box-wrap:hover {
   .container .front p {
     font-size: 14px;
   }
-}
-
-.nav-2 {
-  width: 100%;
-  background: #fff;
 }
 
 .btn-dropdown {
@@ -3159,6 +3275,10 @@ ul {
     width: 120%;
   }
 
+  .carousel-item {
+    height: 195px;
+  }
+
   #carouselExampleIndicators .carousel-inner .carousel-item .carousel-item-content .content-txt {
     width: 100%;
     font-size: 10px;
@@ -3169,13 +3289,13 @@ ul {
   }
 
   #carouselExampleIndicators .carousel-control-next {
-    right: -2rem;
+    right: 0;
     width: 30px;
     height: 30px;
   }
 
   #carouselExampleIndicators .carousel-control-prev {
-    left: -2rem;
+    left: 0;
     width: 30px;
     height: 30px;
   }
@@ -3241,6 +3361,11 @@ ul {
     color: black !important;
   }
 }
+@media screen {
+  .slideshow-container {
+    display: none;
+  }
+}
 @media (max-width: 850px) {
   #menu-bar {
     display: block;
@@ -3253,6 +3378,7 @@ ul {
   .header__sidebar {
     grid-template-columns: repeat(2, 1fr);
     padding: 1rem;
+    display: flex;
   }
   .header__nav {
     position: fixed;

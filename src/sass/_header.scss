@@ -94,98 +94,76 @@
   }
 }
 .mobile__menu {
-  display: none; /* To hide hamburger menu from non-mobile website*/
-}
-.hamburger {
-  position: absolute;
-  top: 14px;
-  right: 10%;
-  z-index: 5;
-  cursor: pointer; /* To change the color when hover over it*/
-}
-
-.hamburger div {
-  position: relative;
-  width: 35px;
-  height: 3px;
-  border-radius: 3px;
-  background-color: #333;
-  margin-top: 10px;
-  transition: all 0.3s ease-in-out; /* To have nice transition when hover over it*/
-}
-
-#toggle {
   display: none;
-}
-
-/* Hamburger nav rotating animation*/
-
-#toggle:checked + .hamburger .hamburger__top {
-  transform: rotate(-45deg);
-  margin-top: 17.5px; /* Half the size of hamburger nav height */
-}
-
-#toggle:checked + .hamburger .hamburger__meat {
-  transform: rotate(45deg);
-  margin-top: -3px; /* Negative value of hamburger nav div height */
-}
-
-#toggle:checked + .hamburger .hamburger__bottom {
-  transform: scale(0); /*Scales hamburger nav down to 0, it`s disapears*/
-}
-
-#toggle:checked + .hamburger + .hamburger__nav {
-  top: 0;
-}
-
-.hamburger__nav {
-  position: fixed;
-  z-index: 4;
-  width: 100%;
-  height: 100%;
-  background-color: $color-white;
-  top: -100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out; /* To have nice transition when hover over it*/
-}
-
-/*wrapper*/
-.hamburger__nav .hamburger__nav--wrapper {
-  position: relative;
-  overflow-y: auto;
-  height: 100%;
-}
-
-/* Hamburger item styling*/
-
-.hamburger__nav--items {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  .hamburger {
+    z-index: 5;
+    cursor: pointer;
+    div {
+      position: relative;
+      width: 35px;
+      height: 3px;
+      border-radius: 3px;
+      background-color: #333;
+      margin-top: 10px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .hamburger__nav {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background-color: $color-white;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    .hamburger__nav--wrapper {
+      position: relative;
+      overflow-y: auto;
+      height: 100%;
+      nav a {
+        opacity: 1;
+      }
+      .hamburger__nav--items {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
+  #toggle {
+    display: none;
+    &:checked + .hamburger .hamburger__top {
+      transform: rotate(-45deg);
+      margin-top: 17.5px; /* Half the size of hamburger nav height */
+    }
+    &:checked + .hamburger .hamburger__meat {
+      transform: rotate(45deg);
+      margin-top: -3px; /* Negative value of hamburger nav div height */
+    }
+    &:checked + .hamburger .hamburger__bottom {
+      transform: scale(0); /*Scales hamburger nav down to 0, it`s disapears*/
+    }
+    &:checked + .hamburger + .hamburger__nav {
+      top: 0;
+    }
+  }
 }
 
 .hamburger__nav--items a {
-  margin-top: 40px;
   color: $color-primary;
   opacity: 0;
   text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
-  transition: all 0.3s ease 0s; /* To have nice transition when hover over it*/
-}
-
-.hamburger__nav--items a:first-child {
-  margin-top: 0; /* First link margin 0 makes sure that spacing to the top and the botoom is included*/
-}
-
-.hamburger__nav--wrapper nav a {
-  opacity: 1;
+  transition: all 0.3s ease 0s;
 }
 
 #menu-bar,
@@ -196,23 +174,18 @@
 @media screen and (max-width: 850px) {
   .mobile__menu {
     display: flex;
-    padding: 2rem 3rem;
-    z-index: 1000000;
+    justify-content: space-between;
+    z-index: 9999;
+    align-items: center;
+    width: 100%;
+    a {
+      z-index: 5;
+    }
   }
 
   .nav__links,
   .med__button {
     display: none;
-  }
-  .hamburger__nav--items {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 428px;
-    position: fixed;
   }
   .header__link-1 {
     font-size: 12px;
@@ -227,12 +200,23 @@
     border-radius: 5rem;
     color: $color-black;
     width: 30rem;
-    height: 4.6rem;
     font-weight: 700;
     font-size: 1.6rem;
     cursor: pointer;
     transition: all 0.2s;
     margin: 14px 0;
+    position: relative;
+    i {
+      position: absolute;
+      right: 15%;
+      bottom: 13px;
+    }
+    &:hover {
+      transform: translateY(-5px);
+    }
+    a {
+      color: $color-black;
+    }
   }
   .logo-bottom {
     width: 40px;
@@ -240,6 +224,19 @@
   }
   address {
     color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 24px 0;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    .address_1 {
+      margin-right: 10%;
+    }
+    .address_2 {
+      text-align: start;
+    }
   }
   .icon-bottom {
     img {
