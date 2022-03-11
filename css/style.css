@@ -305,6 +305,19 @@ li {
   max-width: 1240px;
   font-weight: bolder;
 }
+@media screen and (max-width: 500px) {
+  .bg {
+    bottom: 44rem;
+    margin: 1rem;
+    border: 1px solid #000;
+    border-radius: 3rem;
+    height: 30px;
+    font-weight: 400;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 0.5rem;
+    z-index: 1;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .bg {
     margin-left: 1rem;
@@ -322,6 +335,12 @@ li {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .bg .bg__text {
+    grid-column: 5/12;
+    font-size: 1rem;
+  }
+}
 .bg__video {
   position: absolute;
   top: 0;
@@ -331,6 +350,13 @@ li {
   z-index: -1;
   overflow: hidden;
   height: 100%;
+}
+@media screen and (max-width: 500px) {
+  .bg__video {
+    top: 5rem;
+    overflow: hidden;
+    height: 42%;
+  }
 }
 .bg__content {
   height: 100%;
@@ -343,6 +369,12 @@ li {
   font-size: 2.4rem;
   text-align: center;
   font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  .bg__news {
+    grid-column: 1/4;
+    font-size: 1rem !important;
+  }
 }
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .bg__news {
@@ -359,6 +391,12 @@ li {
   font-size: 1.3rem;
   font-weight: medium;
   margin-top: 0.5rem;
+}
+@media screen and (max-width: 500px) {
+  .bg__times {
+    grid-column: 4/5;
+    font-size: 1rem;
+  }
 }
 .bg__text {
   grid-column: 4/12;
@@ -379,6 +417,14 @@ li {
 .bg__unit-icon {
   margin-left: 3rem;
 }
+@media screen and (max-width: 500px) {
+  .bg__unit-icon {
+    width: 1.6rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+  }
+}
 @media screen and (min-width: 501px) and (max-width: 850px) {
   .bg__unit-icon {
     margin-left: 0;
@@ -398,6 +444,12 @@ li {
   align-items: center;
   z-index: 1;
 }
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 47vh;
+    overflow: hidden;
+  }
+}
 .wrapper img {
   height: auto;
 }
@@ -406,6 +458,12 @@ li {
   top: 18%;
   width: 70%;
   height: auto;
+}
+@media screen and (max-width: 500px) {
+  .wrapper img.people {
+    top: 16%;
+    width: 45%;
+  }
 }
 .wrapper img.text {
   position: absolute;
@@ -416,6 +474,11 @@ li {
   position: absolute;
   top: 50%;
   right: 7%;
+}
+@media screen and (max-width: 500px) {
+  .wrapper__star {
+    display: none;
+  }
 }
 
 .whatit19 {
@@ -428,11 +491,25 @@ li {
   text-align: center;
   background: #fdfaf6;
 }
+@media screen and (max-width: 500px) {
+  .whatit19 {
+    overflow: hidden;
+  }
+}
 .whatit19__h3 {
   font-size: 3rem;
   font-weight: 700;
   color: #15c2c4;
   margin-bottom: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .whatit19__h3 {
+    font-size: 1.8rem;
+  }
+  .whatit19__h3 span:last-child {
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
 }
 .whatit19__h3 span {
   background: linear-gradient(transparent 65%, #fff378 50%, #ffe600 50%);
@@ -441,6 +518,15 @@ li {
   font-size: 1.6rem;
   line-height: 3;
   font-weight: 600;
+}
+@media screen and (max-width: 500px) {
+  .whatit19__text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+  }
 }
 
 .row-card {
@@ -520,10 +606,24 @@ li {
   border: 2px solid black !important;
   margin: 1rem;
 }
+@media screen and (max-width: 500px) {
+  .btn {
+    width: 30rem;
+    height: 5rem;
+    padding: 1rem;
+    margin: auto;
+    font-size: 1.6rem;
+  }
+}
 .btn__arrow img {
   position: absolute;
   top: 28%;
   right: 10%;
+}
+@media screen and (max-width: 500px) {
+  .btn__arrow img {
+    top: 18% !important;
+  }
 }
 .btn a {
   text-decoration: none;
@@ -548,6 +648,12 @@ li {
   background: #fff;
   color: #15c2c4;
 }
+@media screen and (max-width: 500px) {
+  .dekikoto {
+    overflow: hidden;
+    padding: 40px 0;
+  }
+}
 .dekikoto .content-top {
   margin-bottom: 3%;
 }
@@ -555,9 +661,19 @@ li {
   font-size: 30px;
   font-weight: bold;
 }
+@media screen and (max-width: 500px) {
+  .dekikoto .content-top span {
+    font-size: 1.8rem;
+  }
+}
 .dekikoto .content-top h3 {
   font-size: 50px;
   font-weight: bold;
+}
+@media screen and (max-width: 500px) {
+  .dekikoto .content-top h3 {
+    font-size: 30px;
+  }
 }
 .dekikoto .content-top p {
   font-size: 13px;
@@ -569,6 +685,11 @@ li {
   font-weight: 500;
   line-height: 3rem;
 }
+@media screen and (max-width: 500px) {
+  .dekikoto .content-txt {
+    margin: 1rem;
+  }
+}
 .dekikoto ul {
   display: flex;
   flex-wrap: wrap;
@@ -576,6 +697,11 @@ li {
   align-items: center;
   width: 100%;
   margin: 0 auto 60px;
+}
+@media screen and (max-width: 500px) {
+  .dekikoto ul {
+    margin-bottom: 3rem;
+  }
 }
 .dekikoto ul li {
   list-style: none;
@@ -689,6 +815,12 @@ li {
 .IT19 .wrap-box .content-box {
   display: flex;
 }
+@media screen and (max-width: 500px) {
+  .IT19 .wrap-box .content-box {
+    justify-content: center;
+    align-items: center;
+  }
+}
 .IT19 .wrap-box .content-box img {
   width: 140px;
   height: 125px;
@@ -698,10 +830,21 @@ li {
   color: #fff;
   margin-left: 10%;
 }
+@media screen and (max-width: 500px) {
+  .IT19 .wrap-box .content-box .txt {
+    margin-left: 0.5rem;
+  }
+}
 .IT19 .wrap-box .content-box .txt h1 {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 500px) {
+  .IT19 .wrap-box .content-box .txt h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
 }
 .IT19 .wrap-box .content-box .txt p {
   font-size: 14px;
@@ -794,6 +937,11 @@ li {
   }
 }
 @media screen and (min-width: 851px) and (max-width: 1023px) {
+  .container-feature .box-feature .front .wrap-box-feature {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 500px) {
   .container-feature .box-feature .front .wrap-box-feature {
     flex-direction: column;
   }
@@ -3018,128 +3166,10 @@ footer {
 }
 
 @media screen and (max-width: 500px) {
-  .wrapper {
-    height: 47vh;
-    overflow: hidden;
-  }
-
-  .bg__video {
-    position: absolute;
-    top: 5rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    overflow: hidden;
-    height: 42%;
-  }
-
-  .wrapper img.people {
-    width: 86%;
-    top: 10%;
-  }
-
-  .wrapper img.text {
-    top: 16%;
-    width: 45%;
-  }
-
-  .wrapper__star {
-    display: none;
-  }
-
-  .bg {
-    bottom: 50rem;
-    margin: 1rem;
-    border: 1px solid #000;
-    border-radius: 3rem;
-    height: 30px;
-    font-weight: 400;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 0.5rem;
-  }
-
-  .bg__news {
-    grid-column: 1/4;
-    font-size: 1rem !important;
-  }
-
-  .bg__times {
-    grid-column: 4/5;
-    font-size: 1rem;
-  }
-
-  .bg__text {
-    grid-column: 5/12;
-    font-size: 1rem;
-  }
-
-  .bg__unit-icon {
-    width: 1.6rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-  }
-
-  .whatit19 {
-    overflow: hidden;
-  }
-
-  .whatit19__h3 {
-    font-size: 1.8rem;
-  }
-  .whatit19__h3 span:last-child {
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-
-  .whatit19__text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-weight: 400;
-    margin: 1rem;
-    text-align: center;
-  }
-
-  .IT19 .wrap-box .content-box {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .IT19 .wrap-box .content-box .txt {
-    margin-left: 0.5rem;
-  }
-
-  .IT19 .wrap-box .content-box .txt h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
-
   .row-card {
     align-items: center;
     padding: 0rem;
     margin-bottom: 1rem;
-  }
-
-  .dekikoto {
-    overflow: hidden;
-    padding: 40px 0;
-  }
-
-  .dekikoto ul {
-    margin-bottom: 3rem;
-  }
-
-  .dekikoto .content-top span {
-    font-size: 1.8rem;
-  }
-
-  .dekikoto .content-top h3 {
-    font-size: 30px;
-  }
-
-  .dekikoto .content-txt {
-    margin: 1rem;
   }
 
   ol,
@@ -3220,18 +3250,6 @@ ul {
   .section-bottom .section-bottom-txt p {
     font-size: 12px;
     padding-bottom: 3rem;
-  }
-
-  .btn {
-    width: 30rem;
-    height: 5rem;
-    padding: 1rem;
-    margin: auto;
-    font-size: 1.6rem;
-  }
-
-  .btn__arrow img {
-    top: 18% !important;
   }
 
   .section-two {

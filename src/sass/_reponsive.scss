@@ -1,110 +1,12 @@
 @media screen and (max-width: 500px) {
   // HOME.//
-  .wrapper {
-    height: 47vh;
-    overflow: hidden;
-  }
-  .bg__video {
-    position: absolute;
-    top: 5rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    overflow: hidden;
-    height: 42%;
-  }
-  .wrapper img.people {
-    width: 86%;
-    top: 10%;
-  }
-  .wrapper img.text {
-    top: 16%;
-    width: 45%;
-  }
-  .wrapper__star {
-    display: none;
-  }
-  .bg {
-    bottom: 50rem;
-    margin: 1rem;
-    border: 1px solid #000;
-    border-radius: 3rem;
-    height: 30px;
-    font-weight: 400;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 0.5rem;
-  }
-  .bg__news {
-    grid-column: 1/4;
-    font-size: 1rem !important;
-  }
-  .bg__times {
-    grid-column: 4/5;
-    font-size: 1rem;
-  }
-  .bg__text {
-    grid-column: 5/12;
-    font-size: 1rem;
-  }
-  .bg__unit-icon {
-    width: 1.6rem;
-    margin-right: 1rem;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-  }
 
-  .whatit19 {
-    overflow: hidden;
-  }
-  .whatit19__h3 {
-    font-size: 1.8rem;
-    span:last-child {
-      font-size: 3rem;
-      letter-spacing: 2px;
-    }
-  }
-  .whatit19__text {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    font-weight: 400;
-    margin: 1rem;
-    text-align: center;
-  }
-
-  .IT19 .wrap-box .content-box {
-    justify-content: center;
-    align-items: center;
-  }
-  .IT19 .wrap-box .content-box .txt {
-    margin-left: 0.5rem;
-  }
-  .IT19 .wrap-box .content-box .txt h1 {
-    font-size: 26px;
-    margin-bottom: 10px;
-  }
   .row-card {
     align-items: center;
     padding: 0rem;
     margin-bottom: 1rem;
   }
-  .dekikoto {
-    overflow: hidden;
-    padding: 40px 0;
-  }
-  .dekikoto ul {
-    margin-bottom: 3rem;
-  }
 
-  .dekikoto .content-top span {
-    font-size: 1.8rem;
-  }
-  .dekikoto .content-top h3 {
-    font-size: 30px;
-  }
-  .dekikoto .content-txt {
-    margin: 1rem;
-  }
   ol,
   ul {
     padding-left: 0rem !important;
@@ -189,17 +91,6 @@
   .section-bottom .section-bottom-txt p {
     font-size: 12px;
     padding-bottom: 3rem;
-  }
-  .btn {
-    width: 30rem;
-    height: 5rem;
-    padding: 1rem;
-    margin: auto;
-    font-size: 1.6rem;
-    // flex-wrap: wrap !important;
-  }
-  .btn__arrow img {
-    top: 18% !important;
   }
 
   .section-two {
