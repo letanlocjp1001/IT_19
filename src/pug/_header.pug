@@ -21,46 +21,48 @@ header.header#myHeader
       
       //- hamburger menu
       <div class="mobile__menu">
+        a(href="index.html") 
           img(src="../img/logophone.svg", alt="")
-          //- <!--Mobile navigation-->
-          <input id="toggle" type="checkbox"/>
-          
-          <label class="hamburger" for="toggle">
-              img(src="../img/bar.svg", alt="")
-          </label>
-          //- <!--Hamburger navigation-->
-          <div class="hamburger__nav">
-              
-              <div class="hamburger__nav--wrapper">
-                  img(src="img/logophone.svg", alt="")
-                  <nav class="hamburger__nav--items">
-                    button.header__item-1 
-                        a.header__link-1(href="register.html") 応募してみる
-                    button.header__item-2 無料相談はこちら
-                      
-                      img(src="img/arrow-left.svg", alt="")
-                    li.header__item  
-                      <a href="#">IT19とは</a>
-                    li.header__item 
-                      <a href="#">できること</a>
-                    li.header__item  
-                      <a href="#">授業方法</a>
-                    li.header__item 
-                      a(href="") 最新情報
-                    li.header__item 
-                      a(href="") お問い合わせ
-
-                    img(src="img/logo.svg", alt="").logo-bottom
-
-                    address 住所  
-
-                    .icon-bottom
-                      img(src="img/twitter.svg", alt="")
-                      img(src="img/facebook.svg", alt="")
-                  </nav>
+        //- <!--Mobile navigation-->
+        <input id="toggle" type="checkbox"/>
+        
+        <label class="hamburger" for="toggle">
+            img(src="../img/bar.svg", alt="")
+        </label>
+        //- <!--Hamburger navigation-->
+        <div class="hamburger__nav">
+            
+            <div class="hamburger__nav--wrapper">
+              a(href="index.html") 
+                img(src="img/logophone.svg", alt="")
+              <nav class="hamburger__nav--items">
+                button.header__item-1 
+                    a.header__link-1(href="register.html") 応募してみる
+                button.header__item-2 無料相談はこちら
                   
-              </div>
-          </div>
+                  img(src="img/arrow-left.svg", alt="")
+                li.header__item  
+                  <a href="#">IT19とは</a>
+                li.header__item 
+                  <a href="#">できること</a>
+                li.header__item  
+                  <a href="#">授業方法</a>
+                li.header__item 
+                  a(href="") 最新情報
+                li.header__item 
+                  a(href="") お問い合わせ
+
+                img(src="img/logo.svg", alt="").logo-bottom
+
+                address 住所  
+
+                .icon-bottom
+                  img(src="img/twitter.svg", alt="")
+                  img(src="img/facebook.svg", alt="")
+              </nav>
+              
+            </div>
+        </div>
       </div>
 
 script(src="js/app.js") 
