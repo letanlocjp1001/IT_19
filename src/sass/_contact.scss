@@ -128,9 +128,10 @@ main {
         padding: 2% 0;
         letter-spacing: 24px;
         @media screen and (max-width: 500px) {
-          letter-spacing: 10px;
-          font-size: 20px;
+          letter-spacing: 8px;
+          font-size: 18px;
           padding-bottom: 2rem;
+          font-weight: 700;
         }
       }
     }
@@ -149,9 +150,18 @@ main {
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 20px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 20px;
+        }
       }
       p {
         font-size: 16px;
+
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+          margin: 1rem 2rem;
+        }
       }
       .main-div,
       .loggedin-div {
@@ -200,6 +210,7 @@ main {
             // margin-bottom:20px ;
             @media screen and (max-width: 500px) {
               width: 100%;
+              padding: 10px;
             }
             font-weight: 700;
             &:focus {
@@ -225,6 +236,7 @@ main {
         border-radius: 10px;
         @media screen and (max-width: 500px) {
           width: 90%;
+          padding: 2rem;
         }
         h2 {
           font-size: 24px;
@@ -269,7 +281,7 @@ main {
       text-align: center;
       color: $color-primary;
       @media screen and (max-width: 500px) {
-        font-size: 30px;
+        font-size: 24px;
       }
     }
   }
@@ -319,6 +331,11 @@ main {
         margin-bottom: 0;
         letter-spacing: 0.25rem;
         color: $color-black;
+
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+          padding: 1rem;
+        }
       }
       .question-btn {
         font-size: 1.5rem;
@@ -330,6 +347,10 @@ main {
         transition: all 0.3s linear;
         i {
           font-size: 30px;
+
+          @media screen and (max-width: 500px) {
+            font-size: 20px;
+          }
         }
         &:hover {
           transform: rotate(90deg);
@@ -343,6 +364,11 @@ main {
       p {
         font-size: 16px;
         margin-bottom: 0;
+
+        @media screen and (max-width: 500px) {
+          font-size: 12px;
+          padding: 1rem 2rem;
+        }
       }
     }
   }

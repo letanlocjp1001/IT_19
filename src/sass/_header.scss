@@ -171,7 +171,7 @@
   display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1023px) {
   .mobile__menu {
     display: flex;
     justify-content: space-between;
@@ -245,7 +245,7 @@
   }
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 1023px) {
   #menu-bar {
     display: block;
     position: absolute;

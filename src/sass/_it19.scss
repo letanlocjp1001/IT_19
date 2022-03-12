@@ -14,6 +14,11 @@ main {
         @media screen and (max-width: 500px) {
           display: block;
         }
+
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          display: block;
+          padding-top: 2rem;
+        }
         .question {
           background: $color-white;
           border-radius: 10px;
@@ -64,6 +69,10 @@ main {
           color: $color-black;
           font-size: 14px;
           font-weight: bold;
+
+          @media screen and (min-width: 501px) and (max-width: 1023px) {
+            margin: 2rem;
+          }
         }
         /* hide text */
         .question-text {
@@ -86,11 +95,19 @@ main {
         @media screen and (max-width: 500px) {
           width: 50%;
         }
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          width: 40%;
+        }
       }
       .nav-1 {
         width: 100%;
         padding: 40px 0;
+
         @media screen and (max-width: 500px) {
+          display: none;
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
           display: none;
         }
         ul {
@@ -152,6 +169,11 @@ main {
           line-height: 1.6;
           margin: 2rem;
         }
+
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          font-size: 14px;
+          margin: 2rem;
+        }
       }
     }
   }
@@ -171,6 +193,10 @@ main {
         @media screen and (max-width: 500px) {
           font-size: 22px;
           margin: 5rem 2rem;
+        }
+
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          font-size: 30px;
         }
       }
       p {
@@ -192,6 +218,10 @@ main {
         flex-direction: column;
       }
 
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        flex-direction: column;
+      }
+
       .border-box {
         display: flex;
         justify-content: center;
@@ -200,10 +230,16 @@ main {
         height: 318px;
         border: 1rem solid $color-primary;
         border-radius: 100%;
+
         @media screen and (max-width: 500px) {
           margin-bottom: 5rem;
           position: relative;
         }
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          margin-bottom: 5rem;
+          position: relative;
+        }
+
         span {
           font-size: 117px;
           font-weight: bold;
@@ -233,6 +269,16 @@ main {
       align-items: center;
 
       @media screen and (max-width: 500px) {
+        flex-direction: column;
+        margin: 2rem;
+
+        img {
+          width: 90%;
+          margin-bottom: 6rem;
+        }
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
         flex-direction: column;
         margin: 2rem;
 
@@ -277,6 +323,10 @@ main {
           margin-left: 0;
           font-size: 90px;
         }
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          top: -114px;
+          font-size: 90px;
+        }
       }
       p {
         font-size: 16px;
@@ -315,6 +365,10 @@ main {
       @media screen and (max-width: 500px) {
         flex-direction: column;
       }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        flex-wrap: wrap;
+      }
       .box-wrap {
         padding: 2%;
         width: 260px;
@@ -325,6 +379,10 @@ main {
         @media screen and (max-width: 500px) {
           margin-bottom: 3rem;
         }
+        @media screen and (min-width: 501px) and (max-width: 1023px) {
+          margin: 2rem;
+        }
+
         h3 {
           width: 113px;
           font-size: 16px;
@@ -357,6 +415,25 @@ main {
       display: none;
     }
   }
+
+  @media screen and (min-width: 501px) and (max-width: 1023px) {
+    .display_1 {
+      display: block;
+    }
+    .display_2 {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .display_1 {
+      display: none;
+    }
+    .display_2 {
+      display: block;
+    }
+  }
+
   @media screen and (max-width: 500px) {
     .slideshow-container {
       display: block;
@@ -484,6 +561,10 @@ main {
       @media screen and (max-width: 500px) {
         font-size: 30px;
       }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        font-size: 34px;
+      }
     }
     p {
       font-size: 18px;
@@ -493,6 +574,10 @@ main {
 
       @media screen and (max-width: 500px) {
         font-size: 12px;
+        margin: 1rem 2rem;
+      }
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        font-size: 14px;
       }
     }
   }
