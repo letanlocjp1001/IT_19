@@ -1338,6 +1338,11 @@ ul {
   font-weight: bold;
   color: #15c2c4;
 }
+@media screen and (max-width: 500px) {
+  #carouselExampleIndicators h1 {
+    font-size: 30px;
+  }
+}
 #carouselExampleIndicators .carousel-indicators [data-bs-target] {
   width: auto;
   height: 10px;
@@ -1780,6 +1785,11 @@ main .container-wrap .container-content .nav-2 .show-text .minus-icon {
 main .container-wrap .container-content .nav-2 .show-text .plus-icon {
   display: none;
 }
+@media screen and (max-width: 500px) {
+  main .container-wrap .container-content img {
+    width: 50%;
+  }
+}
 main .container-wrap .container-content .nav-1 {
   width: 100%;
   padding: 40px 0;
@@ -1863,7 +1873,8 @@ main .section .container-section h1 {
 }
 @media screen and (max-width: 500px) {
   main .section .container-section h1 {
-    font-size: 30px;
+    font-size: 22px;
+    margin: 5rem 2rem;
   }
 }
 main .section .container-section p {
@@ -1914,6 +1925,7 @@ main .section .container-box .border-box span {
 @media screen and (max-width: 500px) {
   main .section .container-box .border-box span {
     left: -5rem;
+    top: -65px;
   }
 }
 main .section .container-box .border-box p {
@@ -1997,6 +2009,11 @@ main .container-content-box h2 {
   font-weight: bold;
   color: #fff;
 }
+@media screen and (max-width: 500px) {
+  main .container-content-box h2 {
+    font-size: 30px;
+  }
+}
 main .container-content-box .content-box {
   display: flex;
   justify-content: space-around;
@@ -2037,7 +2054,7 @@ main .container-content-box .content-box .box-wrap p {
 main .container-content-box .content-box .box-wrap:hover {
   transform: translateY(-40px);
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   main .display_1 {
     display: block;
   }
@@ -2045,7 +2062,7 @@ main .container-content-box .content-box .box-wrap:hover {
     display: none;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   main .slideshow-container {
     display: block;
   }
@@ -2138,6 +2155,7 @@ main .next {
   justify-content: center;
   align-items: center;
   background: #fff;
+  overflow-x: hidden;
 }
 .container .back {
   position: absolute;
@@ -2176,7 +2194,7 @@ main .next {
 }
 @media screen and (max-width: 500px) {
   .container .front h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 .container .front p {
@@ -2187,7 +2205,7 @@ main .next {
 }
 @media screen and (max-width: 500px) {
   .container .front p {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
@@ -2211,9 +2229,20 @@ main .next {
   font-weight: 700;
   font-size: 40px;
 }
+@media screen and (max-width: 500px) {
+  .container__section h1 {
+    font-size: 30px;
+  }
+}
 .container__section p {
   font-size: 30px;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 500px) {
+  .container__section p {
+    font-size: 18px;
+    margin: 1rem 2rem;
+  }
 }
 
 .container__content {
@@ -2226,10 +2255,23 @@ main .next {
 .container__content-img {
   padding: 2rem;
 }
+@media screen and (max-width: 500px) {
+  .container__content-img img {
+    width: 50%;
+    height: auto;
+  }
+}
 
 .service {
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .service {
+    overflow-x: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 .service__boxs {
   width: 914px;
@@ -2252,6 +2294,12 @@ main .next {
   margin-top: 2.4rem;
   font-size: 1.6rem;
 }
+@media screen and (max-width: 500px) {
+  .service__text {
+    font-size: 12px;
+    margin: 2rem;
+  }
+}
 .service__caption {
   position: absolute;
   top: 50%;
@@ -2269,8 +2317,9 @@ main .next {
 }
 @media screen and (max-width: 500px) {
   .service__caption div {
-    width: 38px;
-    height: 38px;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
   }
 }
 .service__caption span {
@@ -2279,10 +2328,16 @@ main .next {
 }
 @media screen and (max-width: 500px) {
   .service__caption span {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
+@media screen and (max-width: 500px) {
+  .schedule {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
 .schedule__title {
   text-align: center;
 }
@@ -2305,7 +2360,7 @@ main .next {
 }
 @media screen and (max-width: 500px) {
   .schedule__title p {
-    width: 480px;
+    width: 90%;
     font-size: 1.2rem;
   }
 }
@@ -2323,6 +2378,11 @@ main .next {
 .table__title h3 {
   font-size: 3rem;
   font-weight: 400;
+}
+@media screen and (max-width: 500px) {
+  .table__title h3 {
+    font-size: 2.4rem;
+  }
 }
 
 .table__title span:nth-child(1) {
@@ -2388,7 +2448,7 @@ tr td:not(:last-child) {
 }
 @media screen and (max-width: 500px) {
   .line {
-    width: 480px;
+    width: 100%;
   }
 }
 
@@ -2445,6 +2505,8 @@ tr td:not(:last-child) {
     width: 250px;
     top: 60px;
     left: 200px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }
 .method__group .img {
@@ -2453,7 +2515,7 @@ tr td:not(:last-child) {
 }
 @media screen and (max-width: 500px) {
   .method__group .img {
-    width: 12rem;
+    width: 10rem;
     position: absolute;
     left: 35px;
     top: 30px;
@@ -2554,6 +2616,7 @@ tr td:not(:last-child) {
 @media screen and (max-width: 500px) {
   .content__box h3 {
     font-size: 30px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -2703,8 +2766,8 @@ tr td:not(:last-child) {
 }
 @media screen and (max-width: 500px) {
   .news__box {
-    width: 327px;
-    height: 390px;
+    width: 90%;
+    height: auto;
     flex-direction: column;
   }
 }
@@ -2732,6 +2795,7 @@ tr td:not(:last-child) {
     top: -36px;
     left: 80px;
     align-items: center;
+    font-size: 1.2rem;
   }
 }
 .news__title p {
@@ -2763,8 +2827,18 @@ tr td:not(:last-child) {
   font-size: 1.8rem;
   margin: 1rem 0;
 }
+@media screen and (max-width: 500px) {
+  .news__detail h2 {
+    font-size: 1.6rem;
+  }
+}
 .news__detail p {
   font-size: 1.4rem;
+}
+@media screen and (max-width: 500px) {
+  .news__detail p {
+    font-size: 1.2rem;
+  }
 }
 
 .category {
@@ -2816,6 +2890,12 @@ tr td:not(:last-child) {
   margin: 1.5rem;
   font-size: 2.4rem;
   font-weight: 700;
+}
+@media screen and (max-width: 500px) {
+  .pagination p {
+    font-size: 1.2rem;
+    padding: 0.7rem 0.9rem;
+  }
 }
 .pagination__active {
   background-color: #fceb3b;
@@ -2874,17 +2954,30 @@ main nav ul {
   main nav ul {
     width: 90%;
     overflow-x: hidden;
+    padding: 0;
   }
 }
 main nav ul li {
   list-style: none;
   padding: 0 15%;
 }
+@media screen and (max-width: 500px) {
+  main nav ul li {
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
 main nav ul li a {
   font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   color: #000;
+}
+@media screen and (max-width: 500px) {
+  main nav ul li a {
+    font-size: 1.4rem;
+  }
 }
 main nav ul .lm-separator {
   font-size: 16px;
@@ -2941,10 +3034,21 @@ main .wrapper-box .wrapper-flex .border-box h3 {
   font-weight: bold;
   padding: 15px 0;
 }
+@media screen and (max-width: 500px) {
+  main .wrapper-box .wrapper-flex .border-box h3 {
+    font-size: 20px;
+  }
+}
 main .wrapper-box .wrapper-flex .border-box p {
   font-size: 14px;
   font-weight: 400;
   padding: 25px;
+}
+@media screen and (max-width: 500px) {
+  main .wrapper-box .wrapper-flex .border-box p {
+    font-size: 12px;
+    padding: 1rem;
+  }
 }
 main .bg-section {
   width: 100%;

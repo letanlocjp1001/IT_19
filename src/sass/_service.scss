@@ -1,7 +1,13 @@
 .service {
   display: flex;
   justify-content: center;
-  // height: 100%;
+
+  @media screen and (max-width: 500px) {
+    overflow-x: hidden;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   &__boxs {
     width: 914px;
     // height: 510px;
@@ -21,6 +27,11 @@
     margin-bottom: 8rem;
     margin-top: 2.4rem;
     font-size: 1.6rem;
+
+    @media screen and (max-width: 500px) {
+      font-size: 12px;
+      margin: 2rem;
+    }
   }
   &__caption {
     position: absolute;
@@ -37,15 +48,16 @@
       box-shadow: 6px 6px 0 $color-primary;
       text-align: center;
       @media screen and (max-width: 500px) {
-        width: 38px;
-        height: 38px;
+        width: 30px;
+        height: 30px;
+        margin-right: 1rem;
       }
     }
     span {
       font-size: 34px;
       font-weight: bold;
       @media screen and (max-width: 500px) {
-        font-size: 24px;
+        font-size: 20px;
       }
     }
   }
@@ -53,6 +65,11 @@
 
 // === SCHEDULE === //
 .schedule {
+  @media screen and (max-width: 500px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   &__title {
     text-align: center;
     h3 {
@@ -70,7 +87,7 @@
       font-weight: medium;
       padding-bottom: 3rem;
       @media screen and (max-width: 500px) {
-        width: 480px;
+        width: 90%;
         font-size: 1.2rem;
       }
     }
@@ -89,6 +106,10 @@
   h3 {
     font-size: 3rem;
     font-weight: 400;
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.4rem;
+    }
   }
 }
 .table__title span:nth-child(1) {
@@ -147,6 +168,6 @@ tr td:not(:last-child) {
   width: 1140px;
   margin: 5rem auto;
   @media screen and (max-width: 500px) {
-    width: 480px;
+    width: 100%;
   }
 }

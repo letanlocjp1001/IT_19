@@ -908,6 +908,10 @@
     font-size: 40px;
     font-weight: bold;
     color: $color-primary;
+
+    @media screen and (max-width: 500px) {
+      font-size: 30px;
+    }
   }
   .carousel-indicators [data-bs-target] {
     width: auto;
