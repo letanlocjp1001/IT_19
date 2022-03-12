@@ -59,3 +59,13 @@ li {
     font-size: 30px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  ol,
+  ul {
+    padding-left: 0rem !important;
+  }
+  .text-none {
+    display: none;
+  }
+}
