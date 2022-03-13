@@ -3376,7 +3376,7 @@ main nav {
   width: 100%;
 }
 main nav ul {
-  width: 90%;
+  width: 60%;
   margin: auto;
   padding: 20px 0;
   display: flex;
@@ -3387,8 +3387,14 @@ main nav ul {
 }
 @media screen and (max-width: 500px) {
   main nav ul {
+    width: 90%;
     overflow-x: hidden;
     padding: 0;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1023px) {
+  main nav ul {
+    width: 90%;
   }
 }
 main nav ul li {

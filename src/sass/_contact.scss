@@ -2,7 +2,7 @@ main {
   nav {
     width: 100%;
     ul {
-      width: 90%;
+      width: 60%;
       margin: auto;
       padding: 20px 0;
       display: flex;
@@ -12,8 +12,13 @@ main {
       border-radius: 10px;
 
       @media screen and (max-width: 500px) {
+        width: 90%;
         overflow-x: hidden;
         padding: 0;
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 1023px) {
+        width: 90%;
       }
       li {
         list-style: none;
