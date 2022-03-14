@@ -2,7 +2,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 1rem;
   margin: 0 auto;
   display: grid;
   align-items: center;
@@ -17,7 +17,8 @@
   font-weight: bolder;
 
   @media screen and (max-width: 500px) {
-    bottom: 44rem;
+    // bottom: 44rem;
+
     margin: 1rem;
     border: 1px solid #000;
     border-radius: 3rem;
@@ -137,6 +138,7 @@
   justify-content: center;
   align-items: center;
   z-index: 1;
+  position: relative;
   @media screen and (max-width: 500px) {
     height: 47vh;
     overflow: hidden;
@@ -157,6 +159,10 @@
       position: absolute;
       top: 30%;
       width: 38%;
+
+      @media screen and (max-width: 500px) {
+        top: 45%;
+      }
     }
   }
   &__star {

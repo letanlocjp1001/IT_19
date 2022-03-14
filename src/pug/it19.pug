@@ -32,16 +32,16 @@ body
                 .nav-1 
                     ul 
                         li 
-                            a(href="") IT19について
+                            a(href="#特徴") IT19について
                         span.lm-separator |
                         li 
-                            a(href="") 特徴
+                            a(href="#料金形態") 特徴
                         span.lm-separator |
                         li 
-                            a(href="") 料金形態
+                            a(href="#講師紹介") 料金形態
                         span.lm-separator |
                         li 
-                            a(href="") 講師紹介
+                            a(href="#生徒の声") 講師紹介
                 .nav-2 
                     .question
                         .question-title
@@ -52,10 +52,14 @@ body
                                 span.minus-icon
                                     i.fa.fa-close 
                         .question-text
-                            p 特徴
-                            p 料金形態
-                            p 講師紹介
-                            p 生徒の声
+                            a(href="#特徴") 
+                                p 特徴
+                            a(href="#料金形態") 
+                                p 料金形態
+                            a(href="#講師紹介") 
+                                p 講師紹介
+                            a(href="#生徒の声") 
+                                p 生徒の声
 
                 h1  IT19(あいてぃじゅく)の“塾”
                     
@@ -75,7 +79,7 @@ body
                 .border-box
                     span 03 
                     p   就職後のサポート！<br/>なんとかなんとかなんとか！
-        section.section 
+        section.section(id="料金形態") 
             .container-section.wow.animate__fadeInUp 
                 h1 技術者が教える！なんとかなんとかなんとか！
                 .container-content 
@@ -156,7 +160,7 @@ body
         
         
         #carouselExampleIndicators.carousel.slide(data-bs-ride="carousel")
-            h1 講師紹介
+            h1(id="講師紹介") 講師紹介
             .carousel-indicators
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1").active
                 button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
@@ -239,7 +243,7 @@ body
         section.section
             .container-wrap     
                 .container-content-box
-                    h2 生徒の声
+                    h2(id="生徒の声") 生徒の声
                     .content-box
                         .box-wrap 
                             img(src="img/people_3.png", alt="")

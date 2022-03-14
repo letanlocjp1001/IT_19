@@ -339,7 +339,7 @@ ul {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 1rem;
   margin: 0 auto;
   display: grid;
   align-items: center;
@@ -355,7 +355,6 @@ ul {
 }
 @media screen and (max-width: 500px) {
   .bg {
-    bottom: 44rem;
     margin: 1rem;
     border: 1px solid #000;
     border-radius: 3rem;
@@ -491,6 +490,7 @@ ul {
   justify-content: center;
   align-items: center;
   z-index: 1;
+  position: relative;
 }
 @media screen and (max-width: 500px) {
   .wrapper {
@@ -517,6 +517,11 @@ ul {
   position: absolute;
   top: 30%;
   width: 38%;
+}
+@media screen and (max-width: 500px) {
+  .wrapper img.text {
+    top: 45%;
+  }
 }
 .wrapper__star {
   position: absolute;
@@ -1941,6 +1946,9 @@ main .container-wrap .container-content .nav-2 .question-text {
   padding: 1rem 0 1.5rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
+main .container-wrap .container-content .nav-2 .question-text a {
+  text-decoration: none;
+}
 main .container-wrap .container-content .nav-2 .question-text p {
   margin-bottom: 0;
   color: #000;
@@ -3190,10 +3198,10 @@ tr td:not(:last-child) {
 }
 @media screen and (max-width: 500px) {
   .news__img {
-    margin-right: 0;
+    margin-right: 1rem;
   }
   .news__img img {
-    width: 60px;
+    width: 70px;
   }
 }
 .news__title {
@@ -3206,8 +3214,8 @@ tr td:not(:last-child) {
   .news__title {
     justify-content: flex-start;
     position: relative;
-    top: -36px;
-    left: 80px;
+    top: 0;
+    left: 0;
     align-items: center;
     font-size: 1.2rem;
   }
@@ -3221,7 +3229,7 @@ tr td:not(:last-child) {
 @media screen and (max-width: 500px) {
   .news__title p {
     padding: 3px 5px;
-    margin-right: 7rem;
+    margin-right: 4rem;
   }
 }
 @media screen and (max-width: 500px) {
@@ -3233,7 +3241,7 @@ tr td:not(:last-child) {
 @media screen and (max-width: 500px) {
   .news__detail {
     position: relative;
-    top: -20px;
+    top: -10px;
   }
 }
 .news__detail h2 {
@@ -4140,6 +4148,11 @@ footer {
 }
 .table1 ul {
   border-top: none;
+}
+@media screen and (max-width: 1023px) {
+  .table1 ul {
+    margin-bottom: 1rem;
+  }
 }
 .table1__father {
   font-size: 1.5rem;
